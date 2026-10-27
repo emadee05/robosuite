@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "task": "Lift",
+  "robot": "Panda",
+  "pool_id": "lift_train32_v1",
+  "model_seed": 42,
+  "initialization_noise": null,
+  "hard_reset": false,
+  "table_offset_m": [
+    0,
+    0,
+    0.8
+  ],
+  "cube_bottom_clearance_m": 0.01,
+  "description": "32 fixed cube placements in the stock Lift +/-3 cm XY region. Fixed yaw; fixed robot start; model seed fixes cube geometry. IDs identify repeatable reset configurations, not difficulty levels.",
+  "configurations": [
+    {
+      "id": 0,
+      "cube_x_m": 0.00836561,
+      "cube_y_m": -0.02849935,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 1,
+      "cube_x_m": -0.01349824,
+      "cube_y_m": -0.01660736,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 2,
+      "cube_x_m": 0.01418827,
+      "cube_y_m": 0.01060197,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 3,
+      "cube_x_m": 0.02353077,
+      "cube_y_m": -0.02478367,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 4,
+      "cube_x_m": -0.00468469,
+      "cube_y_m": -0.02821217,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 5,
+      "cube_x_m": -0.01688172,
+      "cube_y_m": 0.00032132,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 6,
+      "cube_x_m": -0.02840784,
+      "cube_y_m": -0.01806974,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 7,
+      "cube_x_m": 0.00899307,
+      "cube_y_m": 0.00269649,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 8,
+      "cube_x_m": -0.01677356,
+      "cube_y_m": 0.00535594,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 9,
+      "cube_x_m": 0.01856583,
+      "cube_y_m": -0.02961007,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 10,
+      "cube_x_m": 0.01834916,
+      "cube_y_m": 0.01188836,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 11,
+      "cube_x_m": -0.00958497,
+      "cube_y_m": -0.02067123,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 12,
+      "cube_x_m": 0.02743278,
+      "cube_y_m": -0.00980433,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 13,
+      "cube_x_m": -0.02443525,
+      "cube_y_m": -0.02419702,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 14,
+      "cube_x_m": 0.02084966,
+      "cube_y_m": 0.00622356,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 15,
+      "cube_x_m": 0.0184277,
+      "cube_y_m": 0.01378391,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 16,
+      "cube_x_m": 0.00217369,
+      "cube_y_m": 0.02838695,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 17,
+      "cube_x_m": -0.00728794,
+      "cube_y_m": 0.00312244,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 18,
+      "cube_x_m": 0.01976428,
+      "cube_y_m": 0.00711119,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 19,
+      "cube_x_m": 0.02170241,
+      "cube_y_m": 0.00464113,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 20,
+      "cube_x_m": 0.01227431,
+      "cube_y_m": -0.02725054,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 21,
+      "cube_x_m": -0.0163261,
+      "cube_y_m": -0.01263672,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 22,
+      "cube_x_m": -0.02521248,
+      "cube_y_m": -0.01603255,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 23,
+      "cube_x_m": -0.02393991,
+      "cube_y_m": -0.01332158,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 24,
+      "cube_x_m": 0.00814107,
+      "cube_y_m": -0.00811007,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 25,
+      "cube_x_m": -0.00778914,
+      "cube_y_m": -0.01742958,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 26,
+      "cube_x_m": -0.01398133,
+      "cube_y_m": 0.02619928,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 27,
+      "cube_x_m": 0.00888212,
+      "cube_y_m": 0.00654786,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 28,
+      "cube_x_m": -0.01973168,
+      "cube_y_m": 0.01374761,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 29,
+      "cube_x_m": -0.02019585,
+      "cube_y_m": -0.00723267,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 30,
+      "cube_x_m": 0.0293714,
+      "cube_y_m": 0.00839999,
+      "cube_yaw_rad": 0.0
+    },
+    {
+      "id": 31,
+      "cube_x_m": 0.00341698,
+      "cube_y_m": 0.01107686,
+      "cube_yaw_rad": 0.0
+    }
+  ]
+}

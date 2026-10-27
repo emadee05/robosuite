@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+uniform_run_*/
+continuation_*/
+runs/
+*_validation.json
+**/untrained_eval_*.json
+*.zip

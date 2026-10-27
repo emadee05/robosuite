@@ -1,0 +1,6 @@
+# Additional dependencies; install the local robosuite checkout first.
+numpy==2.4.6
+torch==2.14.1
+stable-baselines3==2.9.0
+gymnasium==1.4.0
+mujoco==3.9.0
