@@ -1,4 +1,4 @@
-> **Uniform and SGS sampling experiments:** see [experiments/sampling](experiments/sampling/README.md) for setup, simulation checks, training, and comparisons.
+> **Uniform and SGS sampling experiments:** see [outputs](outputs/README.md) for the current source layout, setup, and commands.
 
 # robosuite
 
