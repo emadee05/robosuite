@@ -9,8 +9,8 @@ from datetime import datetime
 from pathlib import Path
 import torch
 from stable_baselines3 import PPO
-from uniform_env import UniformLiftEnv
-from evaluate_policy import evaluate_policy
+from uniform.uniform_env import UniformLiftEnv
+from uniform.evaluate_policy import evaluate_policy
 
 
 def main():

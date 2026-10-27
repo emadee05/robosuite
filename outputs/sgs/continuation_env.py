@@ -1,5 +1,5 @@
 """Report completed episodes before SubprocVecEnv automatically resets a worker."""
-from uniform_env import UniformLiftEnv
+from uniform.uniform_env import UniformLiftEnv
 
 
 class ContinuationEnv(UniformLiftEnv):

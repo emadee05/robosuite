@@ -2,7 +2,7 @@
 import gymnasium as gym
 import numpy as np
 from gymnasium import spaces
-from fixed_pool import POOL_PATH, make_pool_environment, pool_hash
+from uniform.fixed_pool import POOL_PATH, make_pool_environment, pool_hash
 
 
 class EpisodeOutcome:

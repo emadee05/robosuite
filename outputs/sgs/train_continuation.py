@@ -19,12 +19,12 @@ import torch
 from stable_baselines3 import PPO
 from stable_baselines3.common.utils import set_random_seed
 from stable_baselines3.common.vec_env import SubprocVecEnv, VecCheckNan
-from train_uniform import Outcomes, write_json
-from uniform_env import UniformLiftEnv
-from continuation_env import ContinuationEnv
-from shared_sampler import SamplerManager
-from fixed_pool import pool_hash
-from evaluate_policy import evaluate_policy
+from uniform.train_uniform import Outcomes, write_json
+from uniform.uniform_env import UniformLiftEnv
+from sgs.continuation_env import ContinuationEnv
+from sgs.shared_sampler import SamplerManager
+from uniform.fixed_pool import pool_hash
+from uniform.evaluate_policy import evaluate_policy
 
 
 class ProgressPPO(PPO):
@@ -147,7 +147,7 @@ def run_branch(args, root, mode, source, checkpoint, settings, target):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--source-run', type=Path, default=Path(__file__).parent/'uniform_run_20261026_205152')
+    parser.add_argument('--source-run', type=Path, default=Path(__file__).parent.parent/'lift_uniform_baseline'/'uniform_run_20261026_205152')
     parser.add_argument('--additional-steps', type=int, default=1000000)
     parser.add_argument('--mode', choices=['both','uniform','sgs'], default='both')
     parser.add_argument('--sgs-kappa', type=float, default=1.0)
@@ -170,12 +170,16 @@ def main():
     checkpoint = source/'checkpoints'/f'ppo_{settings["actual_target_steps"]:09d}.zip'
     digest = hashlib.sha256(checkpoint.read_bytes()).hexdigest()
     target = math.ceil(args.additional_steps/6144)*6144
-    root = Path(__file__).parent/('continuation_'+datetime.now().strftime('%Y%m%d_%H%M%S_%f'))
+    root = (Path(__file__).parent.parent/'lift_uniform_baseline')/('continuation_'+datetime.now().strftime('%Y%m%d_%H%M%S_%f'))
     root.mkdir()
     shutil.copyfile(source/'train_pool.json', root/'train_pool.json')
     (root/'sources').mkdir()
-    for path in Path(__file__).parent.glob('*.py'):
-        shutil.copyfile(path, root/'sources'/path.name)
+    for package in ('uniform', 'sgs'):
+        target = root/'sources'/package
+        target.mkdir()
+        for path in (Path(__file__).parent.parent/package).glob('*.py'):
+            shutil.copyfile(path, target/path.name)
+    shutil.copyfile(source/'train_pool.json', root/'sources'/'uniform'/'train_pool.json')
     write_json(root/'settings.json', dict(source_run=str(source), checkpoint=str(checkpoint),
         checkpoint_sha256=digest, source_settings=settings, additional_steps=target,
         requested_additional_steps=args.additional_steps, workers=4, seed=args.seed,

@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 import numpy as np
-from fixed_pool import make_pool_environment, load_pool, pool_hash
+from uniform.fixed_pool import make_pool_environment, load_pool, pool_hash
 
 
 def main():

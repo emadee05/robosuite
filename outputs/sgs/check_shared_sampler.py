@@ -2,7 +2,7 @@
 import json
 import multiprocessing as mp
 from pathlib import Path
-from shared_sampler import SamplerManager
+from sgs.shared_sampler import SamplerManager
 
 
 def report(shared, worker):
@@ -13,7 +13,7 @@ def report(shared, worker):
 
 
 def main():
-    root = Path(__file__).parent/'uniform_run_20261026_205152'
+    root = Path(__file__).parent.parent/'lift_uniform_baseline'/'uniform_run_20261026_205152'
     settings = json.loads((root/'settings.json').read_text())
     ctx = mp.get_context('spawn')
     with SamplerManager(ctx=ctx) as manager:

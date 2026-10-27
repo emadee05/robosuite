@@ -12,9 +12,9 @@ from pathlib import Path
 import torch
 from stable_baselines3 import PPO
 from stable_baselines3.common.utils import set_random_seed
-from uniform_env import UniformLiftEnv
-from evaluate_policy import evaluate_policy
-from fixed_pool import pool_hash
+from uniform.uniform_env import UniformLiftEnv
+from uniform.evaluate_policy import evaluate_policy
+from uniform.fixed_pool import pool_hash
 
 
 def main():

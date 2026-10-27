@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import numpy as np
 from stable_baselines3.common.env_checker import check_env
-from uniform_env import UniformLiftEnv, EpisodeOutcome
+from uniform.uniform_env import UniformLiftEnv, EpisodeOutcome
 
 
 def main():

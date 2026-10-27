@@ -1,7 +1,7 @@
 """One manager-owned sampler; serialized updates shared by all environment workers."""
 from multiprocessing.managers import BaseManager
 from threading import RLock
-from sgs_sampler import SGSSampler
+from sgs.sgs_sampler import SGSSampler
 
 
 class SharedSampler:

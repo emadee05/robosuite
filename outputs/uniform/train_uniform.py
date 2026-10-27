@@ -22,9 +22,9 @@ import robosuite
 import mujoco
 from stable_baselines3.common.callbacks import BaseCallback
 from stable_baselines3.common.vec_env import SubprocVecEnv, VecCheckNan
-from fixed_pool import POOL_PATH, pool_hash
-from uniform_env import UniformLiftEnv
-from evaluate_policy import evaluate_policy
+from uniform.fixed_pool import POOL_PATH, pool_hash
+from uniform.uniform_env import UniformLiftEnv
+from uniform.evaluate_policy import evaluate_policy
 
 ROLLOUT = 6144
 
@@ -78,7 +78,7 @@ def main():
     parser.add_argument('--workers', type=int, default=4)
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--eval-every-cycles', type=int, default=10)
-    parser.add_argument('--output-dir', type=Path, default=Path(__file__).parent /
+    parser.add_argument('--output-dir', type=Path, default=Path(__file__).parent.parent / 'lift_uniform_baseline' /
                         ('uniform_run_' + datetime.now().strftime('%Y%m%d_%H%M%S')))
     args = parser.parse_args()
     if args.steps < 1 or args.workers < 1 or ROLLOUT % args.workers or args.eval_every_cycles < 1 or args.seed < 0:
@@ -92,8 +92,11 @@ def main():
     (root/'sources').mkdir()
     pool_path = root/'train_pool.json'
     shutil.copyfile(POOL_PATH, pool_path)
-    for name in ('fixed_pool.py', 'uniform_env.py', 'evaluate_policy.py', 'train_uniform.py'):
-        shutil.copyfile(Path(__file__).with_name(name), root/'sources'/name)
+    target_package = root/'sources'/'uniform'
+    target_package.mkdir()
+    for path in Path(__file__).parent.glob('*.py'):
+        shutil.copyfile(path, target_package/path.name)
+    shutil.copyfile(POOL_PATH, target_package/'train_pool.json')
     target = math.ceil(args.steps/ROLLOUT)*ROLLOUT
     interval = args.eval_every_cycles*ROLLOUT
     schedule = list(range(interval, target, interval)) + [target]

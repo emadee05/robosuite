@@ -1,9 +1,11 @@
-# Track source and the fixed configuration pool only.
 *
 !.gitignore
 !README.md
 !requirements.txt
-!lift_uniform_baseline/
-lift_uniform_baseline/*
-!lift_uniform_baseline/*.py
-!lift_uniform_baseline/train_pool.json
+!uniform/
+!sgs/
+uniform/*
+sgs/*
+!uniform/*.py
+!sgs/*.py
+!uniform/train_pool.json

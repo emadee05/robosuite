@@ -3,7 +3,7 @@ import hashlib
 import json
 import math
 from pathlib import Path
-from sgs_sampler import SGSSampler
+from sgs.sgs_sampler import SGSSampler
 
 
 def main():
@@ -24,7 +24,7 @@ def main():
         sampler.update(1, True)
     assert len(sampler.history[1]) == 100 and all(sampler.history[1])
     print('PASS: only the latest 100 outcomes enter each success estimate')
-    root = Path(__file__).parent / 'uniform_run_20261026_205152'
+    root = Path(__file__).parent.parent / 'lift_uniform_baseline' / 'uniform_run_20261026_205152'
     settings = json.loads((root/'settings.json').read_text())
     assert hashlib.sha256((root/'train_pool.json').read_bytes()).hexdigest() == settings['pool_sha256']
     sampler = SGSSampler()
