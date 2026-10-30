@@ -293,3 +293,8 @@ onto the GPU.
   to the backend it picked, and spawned worker processes would inherit that
   rewritten value and die on import. For rendering: `SGS_MUJOCO_GL=cgl` on
   macOS, `egl` on Linux (with GL libraries installed).
+
+## Emily experiments
+
+See [outputs/README.md](outputs/README.md) for the uniform and SGS Lift/Stack
+code, run instructions, recorded results, and evaluation limitations.

@@ -1,0 +1,13 @@
+*
+!.gitignore
+!README.md
+!requirements.txt
+!uniform/
+!sgs/
+uniform/*
+sgs/*
+!uniform/*.py
+!sgs/*.py
+!uniform/train_pool.json
+
+!run_results_summary.json

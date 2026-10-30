@@ -1,0 +1,1353 @@
+{
+  "lift_uniform_baseline/uniform_run_20261026_203735/results.json": {
+    "evaluations": [
+      {
+        "training_transitions": 0,
+        "deterministic_policy": true,
+        "success_definition": "Lift success condition true on at least one step; no early termination",
+        "episode_count": 32,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 61440,
+        "deterministic_policy": true,
+        "success_definition": "Lift success condition true on at least one step; no early termination",
+        "episode_count": 32,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 122880,
+        "deterministic_policy": true,
+        "success_definition": "Lift success condition true on at least one step; no early termination",
+        "episode_count": 32,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 184320,
+        "deterministic_policy": true,
+        "success_definition": "Lift success condition true on at least one step; no early termination",
+        "episode_count": 32,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 245760,
+        "deterministic_policy": true,
+        "success_definition": "Lift success condition true on at least one step; no early termination",
+        "episode_count": 32,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 301056,
+        "deterministic_policy": true,
+        "success_definition": "Lift success condition true on at least one step; no early termination",
+        "episode_count": 32,
+        "successes": 1,
+        "success_rate": 0.03125,
+        "held_out": false
+      }
+    ]
+  },
+  "lift_uniform_baseline/uniform_run_20261026_205152/results.json": {
+    "evaluations": [
+      {
+        "training_transitions": 0,
+        "deterministic_policy": true,
+        "success_definition": "Lift success condition true on at least one step; no early termination",
+        "episode_count": 32,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 184320,
+        "deterministic_policy": true,
+        "success_definition": "Lift success condition true on at least one step; no early termination",
+        "episode_count": 32,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 368640,
+        "deterministic_policy": true,
+        "success_definition": "Lift success condition true on at least one step; no early termination",
+        "episode_count": 32,
+        "successes": 4,
+        "success_rate": 0.125,
+        "held_out": false
+      },
+      {
+        "training_transitions": 552960,
+        "deterministic_policy": true,
+        "success_definition": "Lift success condition true on at least one step; no early termination",
+        "episode_count": 32,
+        "successes": 4,
+        "success_rate": 0.125,
+        "held_out": false
+      },
+      {
+        "training_transitions": 737280,
+        "deterministic_policy": true,
+        "success_definition": "Lift success condition true on at least one step; no early termination",
+        "episode_count": 32,
+        "successes": 2,
+        "success_rate": 0.0625,
+        "held_out": false
+      },
+      {
+        "training_transitions": 921600,
+        "deterministic_policy": true,
+        "success_definition": "Lift success condition true on at least one step; no early termination",
+        "episode_count": 32,
+        "successes": 3,
+        "success_rate": 0.09375,
+        "held_out": false
+      },
+      {
+        "training_transitions": 1001472,
+        "deterministic_policy": true,
+        "success_definition": "Lift success condition true on at least one step; no early termination",
+        "episode_count": 32,
+        "successes": 1,
+        "success_rate": 0.03125,
+        "held_out": false
+      }
+    ]
+  },
+  "stack_comparisons/20261029_013633_130771/comparison.json": {
+    "warmup": {
+      "training_transitions": 12288,
+      "final_evaluations": []
+    },
+    "uniform": {
+      "training_transitions": 24576,
+      "final_evaluations": []
+    },
+    "sgs": {
+      "training_transitions": 24576,
+      "final_evaluations": []
+    }
+  },
+  "stack_comparisons/20261029_014819_838968/comparison.json": {
+    "warmup": {
+      "training_transitions": 3004416,
+      "final_evaluations": [
+        {
+          "training_transitions": 3004416,
+          "additional_training_transitions": 3004416,
+          "deterministic_policy": true,
+          "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+          "episode_count": 32,
+          "successes": 0,
+          "success_rate": 0.0,
+          "held_out": false
+        },
+        {
+          "training_transitions": 3004416,
+          "additional_training_transitions": 3004416,
+          "deterministic_policy": false,
+          "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+          "episode_count": 160,
+          "successes": 22,
+          "success_rate": 0.1375,
+          "held_out": false
+        }
+      ]
+    },
+    "uniform": {
+      "training_transitions": 6008832,
+      "final_evaluations": [
+        {
+          "training_transitions": 6008832,
+          "additional_training_transitions": 3004416,
+          "deterministic_policy": true,
+          "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+          "episode_count": 32,
+          "successes": 0,
+          "success_rate": 0.0,
+          "held_out": false
+        },
+        {
+          "training_transitions": 6008832,
+          "additional_training_transitions": 3004416,
+          "deterministic_policy": false,
+          "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+          "episode_count": 160,
+          "successes": 0,
+          "success_rate": 0.0,
+          "held_out": false
+        }
+      ]
+    },
+    "sgs": {
+      "training_transitions": 6008832,
+      "final_evaluations": [
+        {
+          "training_transitions": 6008832,
+          "additional_training_transitions": 3004416,
+          "deterministic_policy": true,
+          "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+          "episode_count": 32,
+          "successes": 0,
+          "success_rate": 0.0,
+          "held_out": false
+        },
+        {
+          "training_transitions": 6008832,
+          "additional_training_transitions": 3004416,
+          "deterministic_policy": false,
+          "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+          "episode_count": 160,
+          "successes": 1,
+          "success_rate": 0.00625,
+          "held_out": false
+        }
+      ]
+    }
+  },
+  "stack_reward_pilots/20261029_073240_219542/progress/results.json": {
+    "training_transitions": 12288,
+    "successes": 4,
+    "evaluations": []
+  },
+  "stack_reward_pilots/20261029_073240_219542/stock/results.json": {
+    "training_transitions": 12288,
+    "successes": 2,
+    "evaluations": []
+  },
+  "stack_reward_pilots/20261029_073556_017334/progress/results.json": {
+    "training_transitions": 202752,
+    "successes": 93,
+    "evaluations": [
+      {
+        "training_transitions": 0,
+        "deterministic_policy": true,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 0,
+        "deterministic_policy": false,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 16,
+        "successes": 7,
+        "success_rate": 0.4375,
+        "held_out": false
+      },
+      {
+        "training_transitions": 61440,
+        "deterministic_policy": true,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 61440,
+        "deterministic_policy": false,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 16,
+        "successes": 5,
+        "success_rate": 0.3125,
+        "held_out": false
+      },
+      {
+        "training_transitions": 122880,
+        "deterministic_policy": true,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 8,
+        "successes": 8,
+        "success_rate": 1.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 122880,
+        "deterministic_policy": false,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 16,
+        "successes": 10,
+        "success_rate": 0.625,
+        "held_out": false
+      },
+      {
+        "training_transitions": 184320,
+        "deterministic_policy": true,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 8,
+        "successes": 1,
+        "success_rate": 0.125,
+        "held_out": false
+      },
+      {
+        "training_transitions": 184320,
+        "deterministic_policy": false,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 16,
+        "successes": 7,
+        "success_rate": 0.4375,
+        "held_out": false
+      },
+      {
+        "training_transitions": 202752,
+        "deterministic_policy": true,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 202752,
+        "deterministic_policy": false,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 40,
+        "successes": 19,
+        "success_rate": 0.475,
+        "held_out": false
+      }
+    ]
+  },
+  "stack_reward_pilots/20261029_073556_017334/stock/results.json": {
+    "training_transitions": 202752,
+    "successes": 45,
+    "evaluations": [
+      {
+        "training_transitions": 0,
+        "deterministic_policy": true,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 0,
+        "deterministic_policy": false,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 16,
+        "successes": 7,
+        "success_rate": 0.4375,
+        "held_out": false
+      },
+      {
+        "training_transitions": 61440,
+        "deterministic_policy": true,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 61440,
+        "deterministic_policy": false,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 16,
+        "successes": 4,
+        "success_rate": 0.25,
+        "held_out": false
+      },
+      {
+        "training_transitions": 122880,
+        "deterministic_policy": true,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 122880,
+        "deterministic_policy": false,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 16,
+        "successes": 3,
+        "success_rate": 0.1875,
+        "held_out": false
+      },
+      {
+        "training_transitions": 184320,
+        "deterministic_policy": true,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 184320,
+        "deterministic_policy": false,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 16,
+        "successes": 1,
+        "success_rate": 0.0625,
+        "held_out": false
+      },
+      {
+        "training_transitions": 202752,
+        "deterministic_policy": true,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false
+      },
+      {
+        "training_transitions": 202752,
+        "deterministic_policy": false,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 40,
+        "successes": 2,
+        "success_rate": 0.05,
+        "held_out": false
+      }
+    ]
+  },
+  "longer_placement_runs/20261029_094444_695324/results.json": {
+    "training_transitions": 208896,
+    "additional_training_transitions": 6144,
+    "evaluations": []
+  },
+  "longer_placement_runs/20261029_094709_763037/results.json": {
+    "training_transitions": 208896,
+    "additional_training_transitions": 6144,
+    "evaluations": [
+      {
+        "training_transitions": 202752,
+        "additional_training_transitions": 0,
+        "deterministic_policy": true,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 202752,
+        "additional_training_transitions": 0,
+        "deterministic_policy": false,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 8,
+        "successes": 4,
+        "success_rate": 0.5,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 208896,
+        "additional_training_transitions": 6144,
+        "deterministic_policy": true,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 8,
+        "successes": 2,
+        "success_rate": 0.25,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 208896,
+        "additional_training_transitions": 6144,
+        "deterministic_policy": false,
+        "success_definition": "Stock Stack success reached at least once in 1000 steps; no early termination",
+        "episode_count": 8,
+        "successes": 4,
+        "success_rate": 0.5,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      }
+    ]
+  },
+  "sustained_placement_runs/20261029_102310_618334/results.json": {
+    "training_transitions": 6144,
+    "evaluations": [
+      {
+        "training_transitions": 0,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 0,
+        "stock_success_rate": 0.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 0,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 3,
+        "stock_success_rate": 0.375,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 6144,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 0,
+        "stock_success_rate": 0.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 6144,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 2,
+        "stock_success_rate": 0.25,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      }
+    ]
+  },
+  "sustained_placement_runs/20261029_103446_851055/results.json": {
+    "training_transitions": 1001472,
+    "evaluations": [
+      {
+        "training_transitions": 0,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 0,
+        "stock_success_rate": 0.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 0,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 7,
+        "stock_success_rate": 0.4375,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 122880,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 5,
+        "stock_success_rate": 0.625,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 122880,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 8,
+        "stock_success_rate": 0.5,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 245760,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 8,
+        "stock_success_rate": 1.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 245760,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 10,
+        "stock_success_rate": 0.625,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 368640,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 7,
+        "stock_success_rate": 0.875,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 368640,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 6,
+        "stock_success_rate": 0.375,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 491520,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 7,
+        "stock_success_rate": 0.875,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 491520,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 12,
+        "stock_success_rate": 0.75,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 614400,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 8,
+        "stock_success_rate": 1.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 614400,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 12,
+        "stock_success_rate": 0.75,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 737280,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 7,
+        "stock_success_rate": 0.875,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 737280,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 13,
+        "stock_success_rate": 0.8125,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 860160,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 7,
+        "stock_success_rate": 0.875,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 860160,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 15,
+        "stock_success_rate": 0.9375,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 983040,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 8,
+        "stock_success_rate": 1.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 983040,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 11,
+        "stock_success_rate": 0.6875,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 1001472,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 7,
+        "stock_success_rate": 0.875,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 1001472,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 40,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 33,
+        "stock_success_rate": 0.825,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      }
+    ]
+  },
+  "constrained_movement_runs/20261029_111558_171497/results.json": {
+    "training_transitions": 6144,
+    "evaluations": [
+      {
+        "training_transitions": 0,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 0,
+        "stock_success_rate": 0.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 0,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 2,
+        "success_rate": 0.25,
+        "stock_successes": 8,
+        "stock_success_rate": 1.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 2,
+          "stable_at_end_successes": 2,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 6144,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 0,
+        "stock_success_rate": 0.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 6144,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 1,
+        "success_rate": 0.125,
+        "stock_successes": 8,
+        "stock_success_rate": 1.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 2,
+          "stable_at_end_successes": 1,
+          "required_seconds": 1.0
+        }
+      }
+    ]
+  },
+  "constrained_movement_runs/20261029_111835_622460/results.json": {
+    "training_transitions": 61440,
+    "evaluations": [
+      {
+        "training_transitions": 0,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 0,
+        "stock_success_rate": 0.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 0,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 3,
+        "success_rate": 0.1875,
+        "stock_successes": 16,
+        "stock_success_rate": 1.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 3,
+          "stable_at_end_successes": 3,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 61440,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 2,
+        "success_rate": 0.25,
+        "stock_successes": 8,
+        "stock_success_rate": 1.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 2,
+          "stable_at_end_successes": 2,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 61440,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 4,
+        "success_rate": 0.25,
+        "stock_successes": 16,
+        "stock_success_rate": 1.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 5,
+          "stable_at_end_successes": 4,
+          "required_seconds": 1.0
+        }
+      }
+    ]
+  },
+  "constrained_movement_runs/20261029_112325_665874/results.json": {
+    "training_transitions": 202752,
+    "evaluations": [
+      {
+        "training_transitions": 0,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 0,
+        "stock_success_rate": 0.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 0,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 3,
+        "success_rate": 0.1875,
+        "stock_successes": 16,
+        "stock_success_rate": 1.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 3,
+          "stable_at_end_successes": 3,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 61440,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 2,
+        "success_rate": 0.25,
+        "stock_successes": 8,
+        "stock_success_rate": 1.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 2,
+          "stable_at_end_successes": 2,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 61440,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 4,
+        "success_rate": 0.25,
+        "stock_successes": 16,
+        "stock_success_rate": 1.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 5,
+          "stable_at_end_successes": 4,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 122880,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 0,
+        "stock_success_rate": 0.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 122880,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 1,
+        "success_rate": 0.0625,
+        "stock_successes": 15,
+        "stock_success_rate": 0.9375,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 1,
+          "stable_at_end_successes": 1,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 184320,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 0,
+        "stock_success_rate": 0.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 184320,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 1,
+        "success_rate": 0.0625,
+        "stock_successes": 15,
+        "stock_success_rate": 0.9375,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 1,
+          "stable_at_end_successes": 1,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 202752,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 0,
+        "stock_success_rate": 0.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 202752,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 40,
+        "successes": 2,
+        "success_rate": 0.05,
+        "stock_successes": 27,
+        "stock_success_rate": 0.675,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 2,
+          "stable_at_end_successes": 2,
+          "required_seconds": 1.0
+        }
+      }
+    ]
+  },
+  "constrained_movement_runs/20261029_114520_061880/results.json": {
+    "training_transitions": 202752,
+    "evaluations": [
+      {
+        "training_transitions": 0,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 0,
+        "stock_success_rate": 0.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 0,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 12,
+        "stock_success_rate": 0.75,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 61440,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 8,
+        "stock_success_rate": 1.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 61440,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 1,
+        "success_rate": 0.0625,
+        "stock_successes": 12,
+        "stock_success_rate": 0.75,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 1,
+          "stable_at_end_successes": 1,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 122880,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 0,
+        "stock_success_rate": 0.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 122880,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 1,
+        "success_rate": 0.0625,
+        "stock_successes": 10,
+        "stock_success_rate": 0.625,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 1,
+          "stable_at_end_successes": 1,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 184320,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 2,
+        "stock_success_rate": 0.25,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 184320,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 16,
+        "successes": 1,
+        "success_rate": 0.0625,
+        "stock_successes": 7,
+        "stock_success_rate": 0.4375,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 1,
+          "stable_at_end_successes": 1,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 202752,
+        "deterministic_policy": true,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 8,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 0,
+        "stock_success_rate": 0.0,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      },
+      {
+        "training_transitions": 202752,
+        "deterministic_policy": false,
+        "success_definition": "Physical stack sustained for the configured duration at episode end",
+        "episode_count": 40,
+        "successes": 0,
+        "success_rate": 0.0,
+        "stock_successes": 15,
+        "stock_success_rate": 0.375,
+        "held_out": false,
+        "physical": {
+          "sustained_successes": 0,
+          "stable_at_end_successes": 0,
+          "required_seconds": 1.0
+        }
+      }
+    ]
+  }
+}
