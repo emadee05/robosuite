@@ -11,8 +11,9 @@ class SharedSampler:
         self.mode = mode
         self.lock = RLock()
         self.sampler = SGSSampler(kappa=kappa, temperature=temperature)
-        self.sampler.load_training_history(history_path, pool_sha256=pool_hash,
-                                           through_transition=checkpoint_steps)
+        if history_path is not None:
+            self.sampler.load_training_history(history_path, pool_sha256=pool_hash,
+                                               through_transition=checkpoint_steps)
         self.initial_visits = self.sampler.total_visits.copy()
         self.updates = 0
 
