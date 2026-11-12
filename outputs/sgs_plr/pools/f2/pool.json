@@ -1,0 +1,8570 @@
+{
+ "kind": "stack-omnireset-filtered",
+ "seed": 11,
+ "hold_steps": 5,
+ "grasp": "osc-close",
+ "eval_filter": "reject starts solved by holding still with the gripper open or closed",
+ "generation_stats": [
+  {
+   "family": "reaching",
+   "split": "train",
+   "rejects": 3,
+   "trivial_rejects": 0,
+   "trivial_kept": 0,
+   "kept": 32,
+   "cube_held": 11,
+   "airborne": 13,
+   "cells": [
+    "reaching_a0_h0_g0",
+    "reaching_a0_h1_g0",
+    "reaching_a1_h0_g0",
+    "reaching_a1_h0_g1",
+    "reaching_a1_h1_g1"
+   ]
+  },
+  {
+   "family": "grasp",
+   "split": "train",
+   "rejects": 3,
+   "trivial_rejects": 0,
+   "trivial_kept": 3,
+   "kept": 32,
+   "cube_held": 17,
+   "airborne": 0,
+   "cells": [
+    "grasp_p0_o0",
+    "grasp_p0_o1",
+    "grasp_p1_o0",
+    "grasp_p1_o1",
+    "grasp_p2_o0",
+    "grasp_p2_o1",
+    "grasp_p3_o0",
+    "grasp_p3_o1"
+   ]
+  },
+  {
+   "family": "near_goal",
+   "split": "train",
+   "rejects": 17,
+   "trivial_rejects": 0,
+   "trivial_kept": 17,
+   "kept": 32,
+   "cube_held": 27,
+   "airborne": 0,
+   "cells": [
+    "near_goal_d0_o0",
+    "near_goal_d0_o1",
+    "near_goal_d1_o0",
+    "near_goal_d1_o1",
+    "near_goal_d2_o0",
+    "near_goal_d2_o1",
+    "near_goal_d3_o0",
+    "near_goal_d3_o1"
+   ]
+  },
+  {
+   "family": "home",
+   "split": "eval",
+   "rejects": 0,
+   "trivial_rejects": 0,
+   "trivial_kept": 0,
+   "kept": 64,
+   "cube_held": 0,
+   "airborne": 0,
+   "cells": []
+  },
+  {
+   "family": "reaching",
+   "split": "eval",
+   "rejects": 6,
+   "trivial_rejects": 0,
+   "trivial_kept": 0,
+   "kept": 64,
+   "cube_held": 16,
+   "airborne": 26,
+   "cells": [
+    "reaching_a0_h0_g0",
+    "reaching_a0_h1_g0",
+    "reaching_a1_h0_g0",
+    "reaching_a1_h0_g1",
+    "reaching_a1_h1_g0",
+    "reaching_a1_h1_g1"
+   ]
+  },
+  {
+   "family": "grasp",
+   "split": "eval",
+   "rejects": 2,
+   "trivial_rejects": 3,
+   "trivial_kept": 0,
+   "kept": 64,
+   "cube_held": 39,
+   "airborne": 0,
+   "cells": [
+    "grasp_p0_o0",
+    "grasp_p0_o1",
+    "grasp_p1_o0",
+    "grasp_p1_o1",
+    "grasp_p2_o0",
+    "grasp_p2_o1",
+    "grasp_p3_o0",
+    "grasp_p3_o1"
+   ]
+  },
+  {
+   "family": "near_goal",
+   "split": "eval",
+   "rejects": 35,
+   "trivial_rejects": 62,
+   "trivial_kept": 0,
+   "kept": 64,
+   "cube_held": 35,
+   "airborne": 0,
+   "cells": [
+    "near_goal_d0_o0",
+    "near_goal_d0_o1",
+    "near_goal_d1_o0",
+    "near_goal_d1_o1",
+    "near_goal_d2_o0",
+    "near_goal_d2_o1",
+    "near_goal_d3_o0",
+    "near_goal_d3_o1"
+   ]
+  }
+ ],
+ "labels": [
+  "home",
+  "reaching",
+  "grasp",
+  "near_goal"
+ ],
+ "train_families": [
+  "reaching",
+  "grasp",
+  "near_goal"
+ ],
+ "limits": {
+  "home": 200,
+  "reaching": 200,
+  "grasp": 150,
+  "near_goal": 100
+ },
+ "configurations": [
+  {
+   "id": 0,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.061289342750493074,
+    -0.05537009230169981
+   ],
+   "b_xy": [
+    0.045770349416316,
+    -0.09895531523847499
+   ],
+   "yaw": -0.11542546105113081,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 5,
+   "eef_above_grasp": 0.010868591621295717,
+   "finger_gap": 0.04643605186241288,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 1,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.000315635761802513,
+    0.03929705958523322
+   ],
+   "b_xy": [
+    0.08431904040135743,
+    -0.09832554662309739
+   ],
+   "yaw": -0.08265262102786958,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 8,
+   "height": 0.08395196070337502,
+   "finger_gap": 0.0409507783888911,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 2,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.09045447735268866,
+    -0.014086739132277804
+   ],
+   "b_xy": [
+    0.08271723847259105,
+    -0.019431456033738616
+   ],
+   "yaw": -0.17820258258181687,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 2,
+   "eef_above_grasp": 0.02305658881385197,
+   "finger_gap": 0.06725691108326705,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 3,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.03622546902110786,
+    0.03402157406596908
+   ],
+   "b_xy": [
+    0.039096727632826636,
+    -0.09384030003395374
+   ],
+   "yaw": -0.1288552773668386,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 4,
+   "eef_above_grasp": 0.02718432324526143,
+   "finger_gap": 0.05183896746573075,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 4,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.02351194673380168,
+    -0.0803976877087088
+   ],
+   "b_xy": [
+    -0.09751274127523027,
+    0.01890457731483477
+   ],
+   "yaw": -0.1874055365088276,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 10,
+   "height": 0.1381708550166384,
+   "finger_gap": 0.04271937945436975,
+   "cube_held": true,
+   "cell": "reaching_a1_h1_g1",
+   "trivial": false
+  },
+  {
+   "id": 5,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.07483667971337545,
+    -0.04420750418035418
+   ],
+   "b_xy": [
+    0.08605711576472992,
+    -0.08278659280044148
+   ],
+   "yaw": -0.08095413697089958,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 3,
+   "eef_above_grasp": 0.01645963794648086,
+   "finger_gap": 0.06056275466664272,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 6,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.07151896051811657,
+    -0.06281618594289354
+   ],
+   "b_xy": [
+    -0.040369958933962447,
+    -0.05462185947588869
+   ],
+   "yaw": -0.11942086074252867,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 0,
+   "eef_above_grasp": 0.0134501398816621,
+   "finger_gap": 0.0797085032148883,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 7,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.09012289751042582,
+    0.026530485496758363
+   ],
+   "b_xy": [
+    0.0414929967972038,
+    -0.07003030702932776
+   ],
+   "yaw": 0.19806350567991557,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 3,
+   "eef_above_grasp": 0.0031400953266216237,
+   "finger_gap": 0.05963467240965718,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 8,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.002281092569395371,
+    -0.014581148980108205
+   ],
+   "b_xy": [
+    0.07376058982328869,
+    -0.08867380877352003
+   ],
+   "yaw": 0.10423855310860906,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 3,
+   "eef_above_grasp": 0.0774881836473792,
+   "finger_gap": 0.05964162748987503,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 9,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.0750079400181203,
+    0.03951072200857644
+   ],
+   "b_xy": [
+    0.07407681362100049,
+    -0.03786547300268564
+   ],
+   "yaw": 0.1812726602487071,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 4,
+   "eef_above_grasp": 0.07935678382848099,
+   "finger_gap": 0.05183481783672741,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 10,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.0661989061166635,
+    -0.06846413142372819
+   ],
+   "b_xy": [
+    0.08059953445265673,
+    0.04243077488335456
+   ],
+   "yaw": -0.05663113942334546,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 5,
+   "eef_above_grasp": 0.010088311814408054,
+   "finger_gap": 0.04649613872606983,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 11,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.06042234919524514,
+    -0.023122162105324917
+   ],
+   "b_xy": [
+    -0.04756663785354627,
+    0.08760476737829592
+   ],
+   "yaw": -0.005261528948981198,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 2,
+   "eef_above_grasp": 0.06185704763644972,
+   "finger_gap": 0.06729055042009344,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 12,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.02564180483397869,
+    0.04288072103303256
+   ],
+   "b_xy": [
+    -0.07256751498229815,
+    -0.08755517486605234
+   ],
+   "yaw": -0.032307205884002245,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 4,
+   "eef_above_grasp": 0.01225925608139455,
+   "finger_gap": 0.053773022785067785,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 13,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.09765522627727946,
+    0.058128593602876526
+   ],
+   "b_xy": [
+    -0.03315415341230832,
+    0.07593400251139032
+   ],
+   "yaw": 0.08659115848187066,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 4,
+   "height": 0.033519727362504005,
+   "finger_gap": 0.05185275119218319,
+   "cube_held": false,
+   "cell": "reaching_a1_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 14,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    7.937597934195574e-05,
+    -0.05407313883594474
+   ],
+   "b_xy": [
+    -0.06002541380111435,
+    0.09247702339655071
+   ],
+   "yaw": -0.1579655918753313,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 12,
+   "height": 0.05634922749231826,
+   "finger_gap": 0.04201908019369298,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 15,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.06240945496222283,
+    0.031434546765520356
+   ],
+   "b_xy": [
+    -0.09150698112578762,
+    0.062170734434725095
+   ],
+   "yaw": 0.18329919031415104,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 5,
+   "eef_above_grasp": 0.07555299460424003,
+   "finger_gap": 0.04396291123323709,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 16,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.025657891961133685,
+    0.03237155366921087
+   ],
+   "b_xy": [
+    0.05779783519943278,
+    -0.003845421518874881
+   ],
+   "yaw": 0.048723282501014924,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 4,
+   "eef_above_grasp": 0.04571885252273688,
+   "finger_gap": 0.051844150816401605,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 17,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.09489928454748281,
+    -0.028980720790187344
+   ],
+   "b_xy": [
+    -0.03160060704922676,
+    -0.015195322069658013
+   ],
+   "yaw": 0.09706249128295248,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 5,
+   "eef_above_grasp": 0.07340034282372099,
+   "finger_gap": 0.043963199847410095,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 18,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.058356580290462756,
+    -0.07571952106705669
+   ],
+   "b_xy": [
+    0.04121570121681979,
+    -0.036421683927715214
+   ],
+   "yaw": 0.1298485895235127,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 5,
+   "eef_above_grasp": 0.0313583145847297,
+   "finger_gap": 0.04395737911763844,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 19,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.024638672570348265,
+    -0.06569632705738197
+   ],
+   "b_xy": [
+    -0.0702994117324026,
+    0.0682386759733971
+   ],
+   "yaw": 0.18027058519439787,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 0,
+   "eef_above_grasp": 0.028870488579572303,
+   "finger_gap": 0.07938598771459146,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 20,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.05155186855138949,
+    -0.07981141863554873
+   ],
+   "b_xy": [
+    -0.04920904058794593,
+    -0.015398279394040128
+   ],
+   "yaw": -0.04754147398058217,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 10,
+   "height": 0.037991385001224294,
+   "finger_gap": 0.03997526098396127,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 21,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.07044774643861705,
+    -0.09863819858379336
+   ],
+   "b_xy": [
+    -0.02967535782726438,
+    0.03060128343215429
+   ],
+   "yaw": 0.03578383206667062,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 6,
+   "height": 0.09601631224685707,
+   "finger_gap": 0.040710404840519174,
+   "cube_held": true,
+   "cell": "reaching_a1_h1_g1",
+   "trivial": false
+  },
+  {
+   "id": 22,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.09312719775164942,
+    -0.03653662173428414
+   ],
+   "b_xy": [
+    -0.03110830515742509,
+    0.08983424474198075
+   ],
+   "yaw": -0.03682005234858945,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 10,
+   "height": 0.07304061453579981,
+   "finger_gap": 0.03979978509196755,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 23,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.08377653073074272,
+    -0.023877505886931008
+   ],
+   "b_xy": [
+    0.022096387121241335,
+    -0.06992295300410578
+   ],
+   "yaw": 0.1852181611146033,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 10,
+   "height": 0.111272527302255,
+   "finger_gap": 0.04262539234679985,
+   "cube_held": true,
+   "cell": "reaching_a1_h1_g1",
+   "trivial": false
+  },
+  {
+   "id": 24,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.05605098261793116,
+    0.08938908932892052
+   ],
+   "b_xy": [
+    0.05214967136620097,
+    -0.07460137493172585
+   ],
+   "yaw": 0.14233645845361007,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 7,
+   "height": 0.1039832765206116,
+   "finger_gap": 0.04241685010154584,
+   "cube_held": true,
+   "cell": "reaching_a1_h1_g1",
+   "trivial": false
+  },
+  {
+   "id": 25,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.09670403339025245,
+    -0.037188874909096926
+   ],
+   "b_xy": [
+    0.009729478879251241,
+    -0.011991343508829244
+   ],
+   "yaw": 0.19602457020642464,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 3,
+   "height": 0.04106640583257262,
+   "finger_gap": 0.059653930488783466,
+   "cube_held": false,
+   "cell": "reaching_a1_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 26,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.09221481724872616,
+    0.08940928326548157
+   ],
+   "b_xy": [
+    0.01363062390018317,
+    0.007398746201261153
+   ],
+   "yaw": 0.06582143561128162,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 3,
+   "eef_above_grasp": 0.028697725832842354,
+   "finger_gap": 0.05964010057859666,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 27,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.024609784761932298,
+    0.09839115179656333
+   ],
+   "b_xy": [
+    0.0057105714738090235,
+    -0.004315770409345588
+   ],
+   "yaw": 0.007555964543457705,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 3,
+   "eef_above_grasp": 0.04223026326903755,
+   "finger_gap": 0.05963925235506436,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 28,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.08571868513621468,
+    0.08886179916522668
+   ],
+   "b_xy": [
+    0.05444828909928248,
+    -0.036349143194226954
+   ],
+   "yaw": 0.12651048786214464,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 11,
+   "height": 0.05751537831696691,
+   "finger_gap": 0.04013803165917509,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 29,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.014210227225431749,
+    0.05200195583126593
+   ],
+   "b_xy": [
+    0.09728304100207347,
+    0.05508313210357947
+   ],
+   "yaw": -0.1615653662793095,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 11,
+   "height": 0.06836836237559134,
+   "finger_gap": 0.042092280794421955,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 30,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.08895284142131502,
+    0.08322985523552501
+   ],
+   "b_xy": [
+    0.08426766297299818,
+    0.02447563958853898
+   ],
+   "yaw": 0.10746264995075197,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 6,
+   "height": 0.033975437622918055,
+   "finger_gap": 0.04233738492463733,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 31,
+   "split": "train",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.011612338688677039,
+    -0.033814725277271855
+   ],
+   "b_xy": [
+    -0.037926733680882285,
+    0.08882489856813608
+   ],
+   "yaw": 0.08054054221435458,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 3,
+   "eef_above_grasp": 0.007607379030390433,
+   "finger_gap": 0.06157771942942658,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 32,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.0776318062197574,
+    -0.08580704584833808
+   ],
+   "b_xy": [
+    0.06299161955082176,
+    0.0791189990910649
+   ],
+   "yaw": -0.009375712856636699,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.5535381200553162,
+   "open_steps": 0,
+   "finger_gap": 0.03972484398459569,
+   "cube_held": true,
+   "cell": "grasp_p2_o0",
+   "trivial": false
+  },
+  {
+   "id": 33,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.033349084079773016,
+    0.03263714603857555
+   ],
+   "b_xy": [
+    0.03403733726144747,
+    -0.09166428556187343
+   ],
+   "yaw": -0.16607792127196117,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.11430309089453528,
+   "open_steps": 5,
+   "finger_gap": 0.040995263532424,
+   "cube_held": true,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 34,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.07093110731670889,
+    -0.07961315210361296
+   ],
+   "b_xy": [
+    0.026442887675408058,
+    0.05645622779524817
+   ],
+   "yaw": -0.07224590418970815,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.7149115778914594,
+   "open_steps": 5,
+   "finger_gap": 0.04094045143268883,
+   "cube_held": true,
+   "cell": "grasp_p2_o1",
+   "trivial": false
+  },
+  {
+   "id": 35,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.09726424935781808,
+    0.04343596159281835
+   ],
+   "b_xy": [
+    -0.06135154070266591,
+    -0.08800831024465522
+   ],
+   "yaw": 0.09440112788911295,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.9449187506679271,
+   "open_steps": 8,
+   "finger_gap": 0.06037217785026783,
+   "cube_held": false,
+   "cell": "grasp_p3_o1",
+   "trivial": false
+  },
+  {
+   "id": 36,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.056514408448502446,
+    -0.08072176131591283
+   ],
+   "b_xy": [
+    0.049829628204792864,
+    0.023424535827748796
+   ],
+   "yaw": -0.10853979039288197,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.029771407351242396,
+   "open_steps": 0,
+   "finger_gap": 0.03974065869241421,
+   "cube_held": true,
+   "cell": "grasp_p0_o0",
+   "trivial": false
+  },
+  {
+   "id": 37,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.059854041223849234,
+    0.00988117951630656
+   ],
+   "b_xy": [
+    0.05430293808557099,
+    0.0071781439598678
+   ],
+   "yaw": -0.02303655628687733,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.6946978544906952,
+   "open_steps": 2,
+   "finger_gap": 0.04003111903743972,
+   "cube_held": true,
+   "cell": "grasp_p2_o0",
+   "trivial": false
+  },
+  {
+   "id": 38,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.04653026170449546,
+    0.05118497649135641
+   ],
+   "b_xy": [
+    0.06256510754919294,
+    -0.06741188272916043
+   ],
+   "yaw": -0.1639688890271415,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.2744464627144777,
+   "open_steps": 8,
+   "finger_gap": 0.06037607386988822,
+   "cube_held": false,
+   "cell": "grasp_p1_o1",
+   "trivial": false
+  },
+  {
+   "id": 39,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.07086753240228492,
+    0.031027006129895576
+   ],
+   "b_xy": [
+    -0.04373712958248195,
+    0.033209355578703484
+   ],
+   "yaw": -0.13082174555214557,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.4182793892247033,
+   "open_steps": 9,
+   "finger_gap": 0.06816303902698786,
+   "cube_held": false,
+   "cell": "grasp_p1_o1",
+   "trivial": false
+  },
+  {
+   "id": 40,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.025735474438923524,
+    -0.0018721525141589092
+   ],
+   "b_xy": [
+    -0.09710906497036009,
+    -0.02571949286184501
+   ],
+   "yaw": 0.037298534797617446,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.12186864712968337,
+   "open_steps": 2,
+   "finger_gap": 0.04003709928829545,
+   "cube_held": true,
+   "cell": "grasp_p0_o0",
+   "trivial": false
+  },
+  {
+   "id": 41,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.04855630362558867,
+    0.031389465674464524
+   ],
+   "b_xy": [
+    -0.004613529789505822,
+    -0.06474971780317462
+   ],
+   "yaw": 0.15503248530076916,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.3303310279471322,
+   "open_steps": 2,
+   "finger_gap": 0.04007250680333509,
+   "cube_held": true,
+   "cell": "grasp_p1_o0",
+   "trivial": false
+  },
+  {
+   "id": 42,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.09282426326686484,
+    -0.04551279333107379
+   ],
+   "b_xy": [
+    0.052822144984935475,
+    0.04543330535379946
+   ],
+   "yaw": 0.01726634924375281,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.8551881219206665,
+   "open_steps": 2,
+   "finger_gap": 0.04003726134729784,
+   "cube_held": true,
+   "cell": "grasp_p3_o0",
+   "trivial": false
+  },
+  {
+   "id": 43,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.08601737665647949,
+    0.03443506512027983
+   ],
+   "b_xy": [
+    -0.03387618875261518,
+    -0.08518545909039162
+   ],
+   "yaw": 0.006891549508969686,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.9921850571174246,
+   "open_steps": 6,
+   "finger_gap": 0.04541233543125696,
+   "cube_held": false,
+   "cell": "grasp_p3_o1",
+   "trivial": true
+  },
+  {
+   "id": 44,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.026959986911732337,
+    -0.0521759829100146
+   ],
+   "b_xy": [
+    -0.07445769245104512,
+    0.08627241155195475
+   ],
+   "yaw": -0.025409097357426226,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.25978383507585145,
+   "open_steps": 4,
+   "finger_gap": 0.04054524802865196,
+   "cube_held": true,
+   "cell": "grasp_p1_o0",
+   "trivial": false
+  },
+  {
+   "id": 45,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.020892735903255466,
+    -0.07876234507951413
+   ],
+   "b_xy": [
+    0.048194653671233705,
+    -0.016217410617907758
+   ],
+   "yaw": -0.11503168664052708,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.8976099851647538,
+   "open_steps": 7,
+   "finger_gap": 0.05274718992244802,
+   "cube_held": false,
+   "cell": "grasp_p3_o1",
+   "trivial": false
+  },
+  {
+   "id": 46,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.09848158192927248,
+    0.03857662133671609
+   ],
+   "b_xy": [
+    0.00587602125699358,
+    0.027272526982980175
+   ],
+   "yaw": -0.02724052320235959,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.9893559073097119,
+   "open_steps": 3,
+   "finger_gap": 0.040243099786229086,
+   "cube_held": true,
+   "cell": "grasp_p3_o0",
+   "trivial": true
+  },
+  {
+   "id": 47,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.049127640353979346,
+    -0.07766220922189236
+   ],
+   "b_xy": [
+    -0.09088292940796845,
+    0.026725421567163645
+   ],
+   "yaw": 0.07795539923166284,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.801043705539317,
+   "open_steps": 7,
+   "finger_gap": 0.052746258602888896,
+   "cube_held": false,
+   "cell": "grasp_p3_o1",
+   "trivial": false
+  },
+  {
+   "id": 48,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.08658118842222283,
+    -0.0021940055311842734
+   ],
+   "b_xy": [
+    -0.04780033954230556,
+    -0.007598416612535708
+   ],
+   "yaw": 0.15459668849941624,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.20477602471634093,
+   "open_steps": 7,
+   "finger_gap": 0.052749162904058775,
+   "cube_held": false,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 49,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.03800760467112683,
+    0.08370729749389474
+   ],
+   "b_xy": [
+    0.006089732997483322,
+    -0.010607005153465732
+   ],
+   "yaw": -0.11130901298752152,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.4487550667915913,
+   "open_steps": 7,
+   "finger_gap": 0.05274703983538943,
+   "cube_held": false,
+   "cell": "grasp_p1_o1",
+   "trivial": false
+  },
+  {
+   "id": 50,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.09194713379797813,
+    -0.037096034290697966
+   ],
+   "b_xy": [
+    -0.05844414508165319,
+    -0.01791534886400763
+   ],
+   "yaw": -0.03145285125762367,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.7694478346089928,
+   "open_steps": 0,
+   "finger_gap": 0.03972615160194781,
+   "cube_held": true,
+   "cell": "grasp_p3_o0",
+   "trivial": false
+  },
+  {
+   "id": 51,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.05571552428397575,
+    0.0782743810855967
+   ],
+   "b_xy": [
+    -0.014456240929992604,
+    -0.07889068088154248
+   ],
+   "yaw": -0.021806855950726647,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.9390404147184723,
+   "open_steps": 5,
+   "finger_gap": 0.04093690369989082,
+   "cube_held": true,
+   "cell": "grasp_p3_o1",
+   "trivial": false
+  },
+  {
+   "id": 52,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.018970570144402444,
+    0.031189039658905605
+   ],
+   "b_xy": [
+    0.07811727360591346,
+    -0.026487724592089923
+   ],
+   "yaw": 0.17267262320648205,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.7168704446509873,
+   "open_steps": 2,
+   "finger_gap": 0.04011213730041658,
+   "cube_held": true,
+   "cell": "grasp_p2_o0",
+   "trivial": false
+  },
+  {
+   "id": 53,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.03729289067624615,
+    0.0651912021376451
+   ],
+   "b_xy": [
+    0.0905976636283271,
+    -0.010912880798448144
+   ],
+   "yaw": -0.08726710268494885,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.7742041294816493,
+   "open_steps": 6,
+   "finger_gap": 0.04541410763790875,
+   "cube_held": false,
+   "cell": "grasp_p3_o1",
+   "trivial": false
+  },
+  {
+   "id": 54,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.030057487093425372,
+    0.07953971237676855
+   ],
+   "b_xy": [
+    -0.06723569485268106,
+    -0.03807230237202335
+   ],
+   "yaw": -0.11042012861420179,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.9068194018805685,
+   "open_steps": 1,
+   "finger_gap": 0.03987410124158794,
+   "cube_held": true,
+   "cell": "grasp_p3_o0",
+   "trivial": true
+  },
+  {
+   "id": 55,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.05814924078829353,
+    -0.089047224143045
+   ],
+   "b_xy": [
+    -0.040289279021758495,
+    0.015392350735447114
+   ],
+   "yaw": 0.06402157124801318,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.3907686678641207,
+   "open_steps": 8,
+   "finger_gap": 0.06037215276348013,
+   "cube_held": false,
+   "cell": "grasp_p1_o1",
+   "trivial": false
+  },
+  {
+   "id": 56,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.018229964509393095,
+    -0.06625267772043562
+   ],
+   "b_xy": [
+    -0.056899157794136374,
+    0.08766100222111727
+   ],
+   "yaw": -0.09872549554556156,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.7056881623408306,
+   "open_steps": 0,
+   "finger_gap": 0.039729430882332474,
+   "cube_held": true,
+   "cell": "grasp_p2_o0",
+   "trivial": false
+  },
+  {
+   "id": 57,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.08887023279559665,
+    -0.010449051942820997
+   ],
+   "b_xy": [
+    -0.09448538601207496,
+    -0.07013193472977122
+   ],
+   "yaw": 0.030200896807139888,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.4053827741746485,
+   "open_steps": 5,
+   "finger_gap": 0.04093700835500272,
+   "cube_held": true,
+   "cell": "grasp_p1_o1",
+   "trivial": false
+  },
+  {
+   "id": 58,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.05514044822174871,
+    0.05623308302550907
+   ],
+   "b_xy": [
+    0.046799486287258434,
+    -0.022090689996022084
+   ],
+   "yaw": -0.09590492472918073,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.30588781430248957,
+   "open_steps": 8,
+   "finger_gap": 0.06037260565297322,
+   "cube_held": false,
+   "cell": "grasp_p1_o1",
+   "trivial": false
+  },
+  {
+   "id": 59,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.059046445312318285,
+    0.013727459887891548
+   ],
+   "b_xy": [
+    0.07354373277870292,
+    -0.08089733050470789
+   ],
+   "yaw": 0.09343973994425042,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.4998932300597617,
+   "open_steps": 0,
+   "finger_gap": 0.0397288243710042,
+   "cube_held": true,
+   "cell": "grasp_p1_o0",
+   "trivial": false
+  },
+  {
+   "id": 60,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.039111269761775286,
+    -0.032079855278933
+   ],
+   "b_xy": [
+    0.04236876187827885,
+    -0.0889000736879277
+   ],
+   "yaw": -0.0901455029390224,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.22977052276053345,
+   "open_steps": 8,
+   "finger_gap": 0.060372152067909676,
+   "cube_held": false,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 61,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.09865710384033005,
+    -0.08207183758416797
+   ],
+   "b_xy": [
+    0.0667708850245083,
+    -0.016926656973236233
+   ],
+   "yaw": 0.024298107117782,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.042030834351659885,
+   "open_steps": 9,
+   "finger_gap": 0.0681612469250584,
+   "cube_held": false,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 62,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.06892416916772535,
+    -0.018014267587814724
+   ],
+   "b_xy": [
+    -0.001727673678395414,
+    0.06933222902943617
+   ],
+   "yaw": -0.15873337887646213,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.21266668231833297,
+   "open_steps": 8,
+   "finger_gap": 0.06037676303517596,
+   "cube_held": false,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 63,
+   "split": "train",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.07159672526706794,
+    0.00436750937716397
+   ],
+   "b_xy": [
+    0.049768010272472823,
+    0.015261182654753382
+   ],
+   "yaw": 0.15089073482307938,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.69015781084023,
+   "open_steps": 8,
+   "finger_gap": 0.06037282755593715,
+   "cube_held": false,
+   "cell": "grasp_p2_o1",
+   "trivial": false
+  },
+  {
+   "id": 64,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.07834448285035496,
+    0.006047320662688449
+   ],
+   "b_xy": [
+    0.04233996754709617,
+    -0.023400422833242285
+   ],
+   "yaw": -0.048310254351660566,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.4815170341526833,
+   "open_steps": 5,
+   "finger_gap": 0.04093776592626397,
+   "cube_held": true,
+   "cell": "near_goal_d1_o1",
+   "trivial": false
+  },
+  {
+   "id": 65,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.01357672432016166,
+    0.016804140854432804
+   ],
+   "b_xy": [
+    -0.023786011370241236,
+    -0.08493074900883686
+   ],
+   "yaw": -0.09155284819783796,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.658651835703719,
+   "open_steps": 9,
+   "finger_gap": 0.06816221568744579,
+   "cube_held": false,
+   "cell": "near_goal_d2_o1",
+   "trivial": false
+  },
+  {
+   "id": 66,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.017609705266013444,
+    0.08002402246504281
+   ],
+   "b_xy": [
+    -0.09544075861449502,
+    -0.03984803066223284
+   ],
+   "yaw": -0.06826626568874579,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.4959051969256095,
+   "open_steps": 0,
+   "finger_gap": 0.0397294074799226,
+   "cube_held": true,
+   "cell": "near_goal_d1_o0",
+   "trivial": true
+  },
+  {
+   "id": 67,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.03155045597914037,
+    -0.07974830690373139
+   ],
+   "b_xy": [
+    0.07928493295591364,
+    -0.04453959267187007
+   ],
+   "yaw": 0.18686562450822702,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.2629993283643744,
+   "open_steps": 1,
+   "finger_gap": 0.040068321319345145,
+   "cube_held": true,
+   "cell": "near_goal_d0_o0",
+   "trivial": true
+  },
+  {
+   "id": 68,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.0921943884297589,
+    -0.04806996582843331
+   ],
+   "b_xy": [
+    0.06922666895777028,
+    0.07694315643566348
+   ],
+   "yaw": 0.07548750287854036,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.6142298099432403,
+   "open_steps": 5,
+   "finger_gap": 0.040940696769688575,
+   "cube_held": true,
+   "cell": "near_goal_d2_o1",
+   "trivial": false
+  },
+  {
+   "id": 69,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.06490074771073555,
+    0.031718169769224126
+   ],
+   "b_xy": [
+    0.023495817517452246,
+    0.07573316894595901
+   ],
+   "yaw": 0.16180715258703937,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.12263163533133764,
+   "open_steps": 4,
+   "finger_gap": 0.040618324655204485,
+   "cube_held": true,
+   "cell": "near_goal_d0_o0",
+   "trivial": true
+  },
+  {
+   "id": 70,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.09404186589779329,
+    -0.0496173483587459
+   ],
+   "b_xy": [
+    -0.021638745666212978,
+    0.09838924496780561
+   ],
+   "yaw": -0.10706315614533649,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.3901771238094482,
+   "open_steps": 2,
+   "finger_gap": 0.04005463333652872,
+   "cube_held": true,
+   "cell": "near_goal_d1_o0",
+   "trivial": true
+  },
+  {
+   "id": 71,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.09426623821066415,
+    0.03953538061119277
+   ],
+   "b_xy": [
+    0.09466768632945557,
+    0.04490355250376535
+   ],
+   "yaw": -0.10738536337475107,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.8909354417334798,
+   "open_steps": 1,
+   "finger_gap": 0.03987788220536348,
+   "cube_held": true,
+   "cell": "near_goal_d3_o0",
+   "trivial": true
+  },
+  {
+   "id": 72,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.010878115282861867,
+    -0.04046349841991359
+   ],
+   "b_xy": [
+    -0.06067934165946834,
+    0.03903461434975515
+   ],
+   "yaw": -0.1937988595458324,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.3729726118328513,
+   "open_steps": 1,
+   "finger_gap": 0.04007270796538759,
+   "cube_held": true,
+   "cell": "near_goal_d1_o0",
+   "trivial": true
+  },
+  {
+   "id": 73,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.0772280846709873,
+    -0.07696687473535246
+   ],
+   "b_xy": [
+    -0.07572981186107426,
+    0.054577956849869325
+   ],
+   "yaw": -0.05558368373476888,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.5229471390398072,
+   "open_steps": 2,
+   "finger_gap": 0.0400351323616341,
+   "cube_held": true,
+   "cell": "near_goal_d1_o0",
+   "trivial": true
+  },
+  {
+   "id": 74,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.030395285785603424,
+    -0.03497922459708174
+   ],
+   "b_xy": [
+    0.061472645450068614,
+    -0.013725239799031353
+   ],
+   "yaw": 0.04975013264674449,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 1.0062925093253223,
+   "open_steps": 1,
+   "finger_gap": 0.039877551451986334,
+   "cube_held": true,
+   "cell": "near_goal_d3_o0",
+   "trivial": true
+  },
+  {
+   "id": 75,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.08245419523498615,
+    -0.06637172936711931
+   ],
+   "b_xy": [
+    0.08079655207736136,
+    0.005171638805694979
+   ],
+   "yaw": -0.05819278684309062,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.8080349660957235,
+   "open_steps": 1,
+   "finger_gap": 0.039871171251788906,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": false
+  },
+  {
+   "id": 76,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.05526536654329082,
+    -0.004414631808659375
+   ],
+   "b_xy": [
+    -0.08845552101285502,
+    0.003113167765809988
+   ],
+   "yaw": -0.17261909263741618,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.15572732638467168,
+   "open_steps": 7,
+   "finger_gap": 0.052764631807997064,
+   "cube_held": false,
+   "cell": "near_goal_d0_o1",
+   "trivial": false
+  },
+  {
+   "id": 77,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.04868210875117318,
+    -0.08545980288704312
+   ],
+   "b_xy": [
+    -0.03787371575468863,
+    0.03986983556188657
+   ],
+   "yaw": 0.16310149853171302,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.5841811045800664,
+   "open_steps": 2,
+   "finger_gap": 0.04011546458495069,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": true
+  },
+  {
+   "id": 78,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.061691200941491255,
+    -0.09139287797105222
+   ],
+   "b_xy": [
+    -0.037763358139283734,
+    -0.008727027342730143
+   ],
+   "yaw": -0.18126862370284527,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.08476785090017447,
+   "open_steps": 1,
+   "finger_gap": 0.04005732588613335,
+   "cube_held": true,
+   "cell": "near_goal_d0_o0",
+   "trivial": false
+  },
+  {
+   "id": 79,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.0992998871171281,
+    -0.07348906641100116
+   ],
+   "b_xy": [
+    0.013609439338462615,
+    -0.06997517044031487
+   ],
+   "yaw": 0.04435143007993876,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.5947431665796116,
+   "open_steps": 3,
+   "finger_gap": 0.04024369059312937,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": false
+  },
+  {
+   "id": 80,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.0624101462391145,
+    -0.045309086906645035
+   ],
+   "b_xy": [
+    -0.0667182273022706,
+    -0.07656244202973567
+   ],
+   "yaw": 0.15778798264122865,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.6077181862525612,
+   "open_steps": 5,
+   "finger_gap": 0.04110448819929567,
+   "cube_held": true,
+   "cell": "near_goal_d2_o1",
+   "trivial": false
+  },
+  {
+   "id": 81,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.06564955368765422,
+    -0.050505833022209616
+   ],
+   "b_xy": [
+    0.08492113847457422,
+    -0.0811334277565762
+   ],
+   "yaw": -0.16438161644706029,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.6246865887601609,
+   "open_steps": 1,
+   "finger_gap": 0.03994614270140678,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": true
+  },
+  {
+   "id": 82,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.02094427565414965,
+    0.02196647352482302
+   ],
+   "b_xy": [
+    0.02727934781503041,
+    -0.08398598101781066
+   ],
+   "yaw": 0.05692658284199013,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.5958413679797758,
+   "open_steps": 0,
+   "finger_gap": 0.03973628677175564,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": true
+  },
+  {
+   "id": 83,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.054181319037440015,
+    -0.001161574492843398
+   ],
+   "b_xy": [
+    0.011339010459481491,
+    -0.0674734831851742
+   ],
+   "yaw": 0.0259841946028351,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.22969834171440076,
+   "open_steps": 7,
+   "finger_gap": 0.05274618215763536,
+   "cube_held": false,
+   "cell": "near_goal_d0_o1",
+   "trivial": false
+  },
+  {
+   "id": 84,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.07484389585623326,
+    -0.04758158102870487
+   ],
+   "b_xy": [
+    0.07787852663989335,
+    0.0034883076674742997
+   ],
+   "yaw": -0.06799491394765558,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.9605524994500423,
+   "open_steps": 0,
+   "finger_gap": 0.03972883678009284,
+   "cube_held": true,
+   "cell": "near_goal_d3_o0",
+   "trivial": true
+  },
+  {
+   "id": 85,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.01097410931010885,
+    -0.016466900786350915
+   ],
+   "b_xy": [
+    0.09726709193756487,
+    -0.08704427492852218
+   ],
+   "yaw": -0.06872906753099355,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.6811163794123372,
+   "open_steps": 7,
+   "finger_gap": 0.05274683956089089,
+   "cube_held": false,
+   "cell": "near_goal_d2_o1",
+   "trivial": false
+  },
+  {
+   "id": 86,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.0677580855388724,
+    0.03245719497080886
+   ],
+   "b_xy": [
+    0.05050342200466682,
+    0.08623498009624785
+   ],
+   "yaw": -0.029846032852732265,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.9626572964035166,
+   "open_steps": 2,
+   "finger_gap": 0.040031984096151,
+   "cube_held": true,
+   "cell": "near_goal_d3_o0",
+   "trivial": false
+  },
+  {
+   "id": 87,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.06991160768792119,
+    -0.09635243710052002
+   ],
+   "b_xy": [
+    -0.06500118646389237,
+    0.01141761129598109
+   ],
+   "yaw": -0.19463072642503612,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.9485657749776636,
+   "open_steps": 7,
+   "finger_gap": 0.052763133652095756,
+   "cube_held": false,
+   "cell": "near_goal_d3_o1",
+   "trivial": false
+  },
+  {
+   "id": 88,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.030017685269415197,
+    -0.07428804633938955
+   ],
+   "b_xy": [
+    0.005470171321351792,
+    0.043955088565862346
+   ],
+   "yaw": -0.0176169954694128,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.1676254391898379,
+   "open_steps": 5,
+   "finger_gap": 0.04093694482213264,
+   "cube_held": true,
+   "cell": "near_goal_d0_o1",
+   "trivial": true
+  },
+  {
+   "id": 89,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.014881643199009864,
+    0.09913687581200999
+   ],
+   "b_xy": [
+    0.05095538752808637,
+    -0.060680335864084035
+   ],
+   "yaw": 0.14751718006640197,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.18827544376497818,
+   "open_steps": 2,
+   "finger_gap": 0.0401092508202781,
+   "cube_held": true,
+   "cell": "near_goal_d0_o0",
+   "trivial": true
+  },
+  {
+   "id": 90,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.03656618636282458,
+    0.04846151592026169
+   ],
+   "b_xy": [
+    -0.09838952904881869,
+    -0.0680802285321986
+   ],
+   "yaw": -0.08934996286039376,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.05810207034541565,
+   "open_steps": 3,
+   "finger_gap": 0.04027554711752598,
+   "cube_held": true,
+   "cell": "near_goal_d0_o0",
+   "trivial": false
+  },
+  {
+   "id": 91,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.01019660417919832,
+    -0.05523230840577112
+   ],
+   "b_xy": [
+    0.048379069870760266,
+    0.08364400365090462
+   ],
+   "yaw": 0.07989072601062319,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.9980905201386071,
+   "open_steps": 0,
+   "finger_gap": 0.03972684110495673,
+   "cube_held": true,
+   "cell": "near_goal_d3_o0",
+   "trivial": true
+  },
+  {
+   "id": 92,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.02986430048366362,
+    -0.09076600493827557
+   ],
+   "b_xy": [
+    0.08533371848558738,
+    0.06761301190048312
+   ],
+   "yaw": -0.02084608516080655,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.28479007298458364,
+   "open_steps": 5,
+   "finger_gap": 0.04093693343002505,
+   "cube_held": true,
+   "cell": "near_goal_d1_o1",
+   "trivial": false
+  },
+  {
+   "id": 93,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.06760736346314654,
+    0.06264155377228398
+   ],
+   "b_xy": [
+    -0.04215918672148098,
+    0.08351620120739278
+   ],
+   "yaw": 0.04167340052934132,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.12034751245583233,
+   "open_steps": 4,
+   "finger_gap": 0.040555601169443914,
+   "cube_held": true,
+   "cell": "near_goal_d0_o0",
+   "trivial": true
+  },
+  {
+   "id": 94,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.06906153511288822,
+    -0.09473678613095136
+   ],
+   "b_xy": [
+    -0.06570307284031444,
+    0.056112046254857995
+   ],
+   "yaw": 0.1687723461115531,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.5652671828874797,
+   "open_steps": 5,
+   "finger_gap": 0.041128421494738734,
+   "cube_held": true,
+   "cell": "near_goal_d2_o1",
+   "trivial": true
+  },
+  {
+   "id": 95,
+   "split": "train",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.0030217659303063862,
+    0.026349220496181228
+   ],
+   "b_xy": [
+    0.0883569700803044,
+    -0.06374880978498394
+   ],
+   "yaw": -0.14440004824973451,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.6894130155575622,
+   "open_steps": 3,
+   "finger_gap": 0.04029861970209559,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": false
+  },
+  {
+   "id": 96,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.006019715084080191,
+    0.020552833190562315
+   ],
+   "b_xy": [
+    0.09262517976686985,
+    0.010476159850778455
+   ],
+   "yaw": -0.06789914758846996,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 97,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.07027424248029424,
+    0.07224452077194332
+   ],
+   "b_xy": [
+    0.07413180682082261,
+    0.0805992539582297
+   ],
+   "yaw": -0.10828401622043696,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 98,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.006114681306220638,
+    -0.0486986963603842
+   ],
+   "b_xy": [
+    0.028497158686923263,
+    0.047249934731771394
+   ],
+   "yaw": 0.039065974998950904,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 99,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.09759501542579262,
+    0.054433914815881626
+   ],
+   "b_xy": [
+    0.04254091516847816,
+    0.01269604310919923
+   ],
+   "yaw": 0.13668516159271565,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 100,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.0733059946574868,
+    0.016098769092185883
+   ],
+   "b_xy": [
+    0.002820354707279993,
+    0.08675275029713853
+   ],
+   "yaw": 0.14641980016690212,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 101,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.06527916996087904,
+    -0.054998682564893465
+   ],
+   "b_xy": [
+    0.0606414582690038,
+    0.06921835957075617
+   ],
+   "yaw": 0.15219033373798113,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 102,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.00714235709473221,
+    0.08486702204710309
+   ],
+   "b_xy": [
+    0.06948196386007015,
+    -0.009727263114117557
+   ],
+   "yaw": 0.14935285503940343,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 103,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.04055551846580783,
+    -0.05839434697801593
+   ],
+   "b_xy": [
+    0.043111911799253534,
+    0.05787920288512332
+   ],
+   "yaw": 0.059163852532414296,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 104,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.07072626598204326,
+    -0.0016993558912158592
+   ],
+   "b_xy": [
+    0.012400875619669894,
+    0.0912558991711867
+   ],
+   "yaw": 0.05885573081220002,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 105,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.09126604283746767,
+    -0.0669284238944549
+   ],
+   "b_xy": [
+    -0.07592521137233316,
+    -0.06903651531568587
+   ],
+   "yaw": 0.10120715934308411,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 106,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.08778760308169509,
+    0.0755963553129738
+   ],
+   "b_xy": [
+    -0.051501269439174414,
+    -0.07308148234298553
+   ],
+   "yaw": -0.04061105236441285,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 107,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.01238169395660893,
+    -0.06310625275418309
+   ],
+   "b_xy": [
+    0.05784493051623623,
+    0.012010160299475103
+   ],
+   "yaw": -0.07857783035481335,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 108,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.06223790229997681,
+    0.0392074753579291
+   ],
+   "b_xy": [
+    0.07049543492183,
+    -0.021793464692362874
+   ],
+   "yaw": 0.12448297344671118,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 109,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.0706094981427912,
+    -0.01201508905949078
+   ],
+   "b_xy": [
+    0.03167444925082372,
+    0.04659081283445568
+   ],
+   "yaw": -0.07133302239064468,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 110,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.08578683221471804,
+    0.02219298970226513
+   ],
+   "b_xy": [
+    0.047711466699941224,
+    -0.02886498112141076
+   ],
+   "yaw": -0.07007086072877718,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 111,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.09947467365796908,
+    0.06558427357861443
+   ],
+   "b_xy": [
+    -0.0063401349187134585,
+    0.031033999494124553
+   ],
+   "yaw": 0.06572491533216632,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 112,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.025066457412781774,
+    -0.08833287559672504
+   ],
+   "b_xy": [
+    -0.05718926752090703,
+    0.021775426154781855
+   ],
+   "yaw": -0.06112382253693607,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 113,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.06375267556151236,
+    0.05680329491753103
+   ],
+   "b_xy": [
+    0.08346983185011306,
+    -0.0025307547477381844
+   ],
+   "yaw": 0.12857784621704646,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 114,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.06519453287436239,
+    -0.022162320972266426
+   ],
+   "b_xy": [
+    0.007129138076385777,
+    0.07862088341358762
+   ],
+   "yaw": 0.04572004459217003,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 115,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.08553867211488089,
+    -0.04669924859156967
+   ],
+   "b_xy": [
+    0.052958590815494526,
+    0.09547465412527315
+   ],
+   "yaw": -0.011954843951256233,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 116,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.03160256894802347,
+    -0.03929834336858345
+   ],
+   "b_xy": [
+    -0.09310519005932374,
+    0.0846422274774189
+   ],
+   "yaw": 0.18965990290793613,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 117,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.004961766947871382,
+    -0.059985589881535
+   ],
+   "b_xy": [
+    0.08550946351184685,
+    -0.01671791511382963
+   ],
+   "yaw": -0.19510261512455324,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 118,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.0825080110162771,
+    -0.00118169329515887
+   ],
+   "b_xy": [
+    -0.02724547036226015,
+    0.06736614790637352
+   ],
+   "yaw": 0.08791311727988114,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 119,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.07809626876637779,
+    0.06091030279702523
+   ],
+   "b_xy": [
+    0.047975807424970984,
+    0.04408873210666975
+   ],
+   "yaw": 0.10821824118938982,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 120,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.0719745117877612,
+    -0.041927339993015345
+   ],
+   "b_xy": [
+    0.0901603144108883,
+    -0.03477699077913741
+   ],
+   "yaw": -0.066423840189809,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 121,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.040938237004493755,
+    0.06015955860729565
+   ],
+   "b_xy": [
+    0.09928995055207666,
+    0.039998130716726844
+   ],
+   "yaw": -0.04383173690764979,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 122,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.031095220071133547,
+    0.012302397977956315
+   ],
+   "b_xy": [
+    0.08165989400611484,
+    0.0112713948143647
+   ],
+   "yaw": 0.07549231384532656,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 123,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.06051572413364359,
+    -0.04177888871998201
+   ],
+   "b_xy": [
+    -0.005109054105899902,
+    0.08670266338667265
+   ],
+   "yaw": -0.04014969493571541,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 124,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.08066250858606522,
+    0.07820711853808582
+   ],
+   "b_xy": [
+    -0.003090979699349794,
+    0.033277211016927204
+   ],
+   "yaw": -0.05553536922447751,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 125,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.09518428701028346,
+    0.07472401346671065
+   ],
+   "b_xy": [
+    0.044454302484777844,
+    -0.03484721584255912
+   ],
+   "yaw": -0.19637848477351008,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 126,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.06766274284831933,
+    -0.06604515823669917
+   ],
+   "b_xy": [
+    0.021511168224419876,
+    0.03147008234914848
+   ],
+   "yaw": 0.1421426621415527,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 127,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.040395707679334716,
+    -0.07836157726557867
+   ],
+   "b_xy": [
+    -0.09175325450311639,
+    0.07171835460674424
+   ],
+   "yaw": 0.06496277192711651,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 128,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.05012154134750571,
+    -0.04933243394087392
+   ],
+   "b_xy": [
+    0.0016493542354797165,
+    0.07152100357750919
+   ],
+   "yaw": 0.1354266120914885,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 129,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.07344336980422142,
+    0.09785207384412498
+   ],
+   "b_xy": [
+    0.026330056512420555,
+    -0.0149720449828054
+   ],
+   "yaw": 0.14118724319988157,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 130,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.07892123136302043,
+    -0.018255994706789427
+   ],
+   "b_xy": [
+    0.024890864908002186,
+    0.06635673344905034
+   ],
+   "yaw": -0.06901418027450582,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 131,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.03572233803626359,
+    0.0021280224496553536
+   ],
+   "b_xy": [
+    0.04506326147773598,
+    0.06740425643331648
+   ],
+   "yaw": 0.17341350934652489,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 132,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.026841082887563462,
+    0.06314123340906537
+   ],
+   "b_xy": [
+    -0.04842647536564655,
+    -0.047908888943389585
+   ],
+   "yaw": -0.13734451521910365,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 133,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.059430626474170835,
+    -0.0903821921119534
+   ],
+   "b_xy": [
+    0.04005580252697771,
+    0.023895815197412153
+   ],
+   "yaw": -0.11509796729037665,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 134,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.03175343302800509,
+    -0.05885544555807738
+   ],
+   "b_xy": [
+    -0.07313626684582263,
+    -0.007102739005523828
+   ],
+   "yaw": -0.19719540354056622,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 135,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.006297205507015247,
+    0.024497542033913744
+   ],
+   "b_xy": [
+    0.03786745254360131,
+    -0.09164446842181402
+   ],
+   "yaw": -0.1378878994845387,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 136,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.0028154621909652236,
+    -0.002886973842860763
+   ],
+   "b_xy": [
+    -0.0861159633413233,
+    0.07456371579731595
+   ],
+   "yaw": -0.138893385435806,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 137,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.04548709315333715,
+    -0.030386847974421285
+   ],
+   "b_xy": [
+    -0.0502784495328118,
+    -0.058561604019127494
+   ],
+   "yaw": -0.16858095816039148,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 138,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.074125508680684,
+    -0.03706209644509944
+   ],
+   "b_xy": [
+    0.07177232885268373,
+    0.06685280220371197
+   ],
+   "yaw": -0.1444459451668205,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 139,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.07708747614156429,
+    -0.06610489189299891
+   ],
+   "b_xy": [
+    0.03834749307300467,
+    -0.0854022187950798
+   ],
+   "yaw": -0.15520918075564571,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 140,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.01889627141641641,
+    0.03018795312563898
+   ],
+   "b_xy": [
+    -0.07858600864070708,
+    -0.03526196067988712
+   ],
+   "yaw": 0.10401258461167728,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 141,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.0647693069898692,
+    0.061195615362252355
+   ],
+   "b_xy": [
+    -0.03205583315051302,
+    0.08093751325980719
+   ],
+   "yaw": 0.053891192176038286,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 142,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.04180359551658633,
+    0.0502597542912292
+   ],
+   "b_xy": [
+    0.06580903311947728,
+    -0.07964230897507035
+   ],
+   "yaw": -0.18870678804186564,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 143,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.00772652708165511,
+    0.08541908785512452
+   ],
+   "b_xy": [
+    -0.03152673754054445,
+    -0.08451454489781923
+   ],
+   "yaw": -0.053566083301365364,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 144,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.07023230536735277,
+    0.01732534524297553
+   ],
+   "b_xy": [
+    -0.02076624551546498,
+    -0.08712393089470574
+   ],
+   "yaw": -0.16848003501058584,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 145,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.04788170085475037,
+    -0.08830322371194449
+   ],
+   "b_xy": [
+    0.07501707368141303,
+    0.04168911993190521
+   ],
+   "yaw": -0.047701894030837626,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 146,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.047333848117942834,
+    0.09051225929255463
+   ],
+   "b_xy": [
+    -0.0457252881823752,
+    -0.0922909148443535
+   ],
+   "yaw": -0.09438802566560818,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 147,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.04311738498733653,
+    -0.01723689020512933
+   ],
+   "b_xy": [
+    0.007337420978285137,
+    0.07854302399617741
+   ],
+   "yaw": -0.1115282961524649,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 148,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.028161638432684422,
+    0.059634798515427995
+   ],
+   "b_xy": [
+    0.06558160166862326,
+    -0.09916222643108537
+   ],
+   "yaw": 0.14897933446582265,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 149,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.027557341950380912,
+    0.0747074497620688
+   ],
+   "b_xy": [
+    -0.08066917639237603,
+    0.08483380270297257
+   ],
+   "yaw": 0.15026274477986337,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 150,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.0009034265583255596,
+    -0.0790769744134968
+   ],
+   "b_xy": [
+    0.06581521520774139,
+    0.06308326855686293
+   ],
+   "yaw": 0.1142612815006499,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 151,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.08833011455481399,
+    -0.07211777841162983
+   ],
+   "b_xy": [
+    -0.07280119269992484,
+    0.029896469053417786
+   ],
+   "yaw": -0.0752679107337651,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 152,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.09340551027107738,
+    -0.08732976763625389
+   ],
+   "b_xy": [
+    -0.011918082789229102,
+    -0.028319583307908805
+   ],
+   "yaw": 0.03818122504169979,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 153,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.04429686310975811,
+    0.053113419824243606
+   ],
+   "b_xy": [
+    0.033843654633097735,
+    -0.04943338182418233
+   ],
+   "yaw": -0.12320460070062862,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 154,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.09438087751227403,
+    -0.09022927456507435
+   ],
+   "b_xy": [
+    -0.09415639921803548,
+    -0.020394189236356986
+   ],
+   "yaw": -0.1514722261813875,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 155,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.09486714146056559,
+    0.04704298834642369
+   ],
+   "b_xy": [
+    -0.007563312853730953,
+    -0.07249429037471922
+   ],
+   "yaw": 0.06595768888573926,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 156,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.040807939090336864,
+    -0.04821998723938135
+   ],
+   "b_xy": [
+    -0.06767738040361236,
+    -0.012787893408543138
+   ],
+   "yaw": 0.06881037624391402,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 157,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.06464214237233826,
+    0.02314496824736605
+   ],
+   "b_xy": [
+    -0.07153947726061581,
+    -0.06718861712060863
+   ],
+   "yaw": -0.03202835647227116,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 158,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    -0.052794332599745135,
+    -0.08112299237968267
+   ],
+   "b_xy": [
+    0.08840515641938279,
+    -0.08173560794758794
+   ],
+   "yaw": 0.0908785507498092,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 159,
+   "split": "eval",
+   "label": "home",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "home",
+   "a_xy": [
+    0.04207509980466395,
+    -0.04766793904523206
+   ],
+   "b_xy": [
+    -0.09214455430625884,
+    0.003309623803630002
+   ],
+   "yaw": 0.15225403880759605,
+   "grasp": "osc-close",
+   "trivial": false
+  },
+  {
+   "id": 160,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.045236764433860134,
+    -0.016591106318812377
+   ],
+   "b_xy": [
+    -0.08569027485348431,
+    -0.0530820738731245
+   ],
+   "yaw": -0.13403827799971,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 4,
+   "eef_above_grasp": 0.049587415542966966,
+   "finger_gap": 0.051848890325326843,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 161,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.050354539168490045,
+    0.07222854472023384
+   ],
+   "b_xy": [
+    0.08501752864896489,
+    -0.0467207496384628
+   ],
+   "yaw": 0.04784210546782788,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 8,
+   "height": 0.07982182146719558,
+   "finger_gap": 0.04029937177513454,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 162,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.0929760518888701,
+    -0.03727939913270575
+   ],
+   "b_xy": [
+    0.06415944226091597,
+    -0.03652734032128353
+   ],
+   "yaw": -0.00516783920912376,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 1,
+   "eef_above_grasp": 0.009080443671886314,
+   "finger_gap": 0.0746052554834483,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 163,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.08222682036815197,
+    -0.09720131766150455
+   ],
+   "b_xy": [
+    0.009106323342656908,
+    -0.09806721675224567
+   ],
+   "yaw": 0.1017120378357352,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 2,
+   "eef_above_grasp": 0.043989186471644064,
+   "finger_gap": 0.06726823667475991,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 164,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.07777719741847738,
+    0.07986569641482962
+   ],
+   "b_xy": [
+    0.014330598024519192,
+    -0.043998400660203066
+   ],
+   "yaw": 0.09384140429447259,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 11,
+   "height": 0.08112737931723854,
+   "finger_gap": 0.04065867651103962,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 165,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.029364604656828733,
+    0.07551407585765034
+   ],
+   "b_xy": [
+    -0.09321042730497194,
+    -0.0037535099383335436
+   ],
+   "yaw": 0.10937736998521644,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 0,
+   "eef_above_grasp": 0.06019459296157758,
+   "finger_gap": 0.07958592266787216,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 166,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.07825256776708751,
+    0.005005625356302801
+   ],
+   "b_xy": [
+    0.08174574570485355,
+    -0.0072975248222609595
+   ],
+   "yaw": 0.03446780707053718,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 2,
+   "height": 0.04100421191282004,
+   "finger_gap": 0.0672638203577055,
+   "cube_held": false,
+   "cell": "reaching_a1_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 167,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.04518537301293173,
+    -0.00047169993291005244
+   ],
+   "b_xy": [
+    -0.08351668399899675,
+    0.08432491107767455
+   ],
+   "yaw": -0.1332133183761115,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 5,
+   "eef_above_grasp": 0.004303622653510471,
+   "finger_gap": 0.046170552819946566,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 168,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.0351104357955909,
+    0.01334363843434474
+   ],
+   "b_xy": [
+    -0.028333708530361903,
+    -0.09851465113079594
+   ],
+   "yaw": -0.18489611143529966,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 0,
+   "eef_above_grasp": 0.04261863712892377,
+   "finger_gap": 0.07933042115822288,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 169,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.003622770372162454,
+    0.08040224829312759
+   ],
+   "b_xy": [
+    0.03931955806414227,
+    -0.042867178757070114
+   ],
+   "yaw": 0.1313095168285101,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 2,
+   "eef_above_grasp": 0.042023180527316455,
+   "finger_gap": 0.06727997606907224,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 170,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.054138204123746016,
+    -0.0633680515555509
+   ],
+   "b_xy": [
+    -0.08625979326595615,
+    0.026707534321158577
+   ],
+   "yaw": -0.18300474644558698,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 1,
+   "eef_above_grasp": 0.03571077357036911,
+   "finger_gap": 0.07465469133889,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 171,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.03525994437581037,
+    -0.02182976419053935
+   ],
+   "b_xy": [
+    -0.08798701150620188,
+    -0.020975554165111987
+   ],
+   "yaw": -0.12773536855850062,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 3,
+   "height": 0.1299594002787591,
+   "finger_gap": 0.05965004989216095,
+   "cube_held": false,
+   "cell": "reaching_a1_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 172,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.05562044097567986,
+    0.0479207221345235
+   ],
+   "b_xy": [
+    0.023696744362587865,
+    0.0905684682818207
+   ],
+   "yaw": 0.009542505401629731,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 0,
+   "eef_above_grasp": 0.07224135719028901,
+   "finger_gap": 0.07916499166043153,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 173,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.012116109794982323,
+    -0.07654585415880817
+   ],
+   "b_xy": [
+    -0.01436465279443875,
+    0.07544309060125474
+   ],
+   "yaw": 0.045685444172585445,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 1,
+   "eef_above_grasp": 0.017942386196209022,
+   "finger_gap": 0.07463890092018662,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 174,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.07659688365242884,
+    -0.015352919996773774
+   ],
+   "b_xy": [
+    0.0942319070243075,
+    0.09010124855578838
+   ],
+   "yaw": -0.009693091678862498,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 12,
+   "height": 0.04619761250567503,
+   "finger_gap": 0.039737785371150795,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 175,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.07118616610272853,
+    0.09773107660895752
+   ],
+   "b_xy": [
+    -0.08023309215859507,
+    0.03726967770208907
+   ],
+   "yaw": 0.1056892904608819,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 0,
+   "eef_above_grasp": 0.07199808116016959,
+   "finger_gap": 0.07975537500921027,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 176,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.06615563297221638,
+    -0.08159783064294635
+   ],
+   "b_xy": [
+    0.06205422266115357,
+    -0.07701871406012978
+   ],
+   "yaw": 0.10924633362017283,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 7,
+   "height": 0.0513850879763415,
+   "finger_gap": 0.04135611105776853,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 177,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.03684789848283492,
+    -0.04017521307592942
+   ],
+   "b_xy": [
+    0.03067021781248465,
+    0.04479398564152262
+   ],
+   "yaw": 0.13243372917412075,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 4,
+   "eef_above_grasp": 0.0036483931203674614,
+   "finger_gap": 0.051841774901737414,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 178,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.08314720028280986,
+    -0.06428884220356368
+   ],
+   "b_xy": [
+    -0.05856060969691963,
+    0.09064222113164276
+   ],
+   "yaw": 0.1045868567437605,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 2,
+   "height": 0.09338764361289761,
+   "finger_gap": 0.06729963687024271,
+   "cube_held": false,
+   "cell": "reaching_a1_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 179,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.07397156809409565,
+    -0.030143029479521723
+   ],
+   "b_xy": [
+    0.0576670471413632,
+    -0.050454642638410534
+   ],
+   "yaw": -0.05296721899138919,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 9,
+   "height": 0.05978358503356415,
+   "finger_gap": 0.04011104111865941,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 180,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.030935869297719788,
+    -0.07217688256392521
+   ],
+   "b_xy": [
+    0.06783719499515072,
+    -0.08800515242229695
+   ],
+   "yaw": -0.016379506238958588,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 4,
+   "eef_above_grasp": 0.05819157590574985,
+   "finger_gap": 0.051841532779818046,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 181,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.08030050110198175,
+    -0.05082393114096977
+   ],
+   "b_xy": [
+    0.019007284855683905,
+    -0.0575616900803734
+   ],
+   "yaw": 0.10910578224166208,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 12,
+   "height": 0.1253406038919647,
+   "finger_gap": 0.04061884729357175,
+   "cube_held": true,
+   "cell": "reaching_a1_h1_g1",
+   "trivial": false
+  },
+  {
+   "id": 182,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.021166272362094143,
+    -0.024017766319268465
+   ],
+   "b_xy": [
+    0.04047827003697531,
+    0.08345799917554467
+   ],
+   "yaw": 0.13181401948557078,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 5,
+   "eef_above_grasp": 0.058341451530172,
+   "finger_gap": 0.043959440720922574,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 183,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.022211200224584806,
+    -0.03541661171676618
+   ],
+   "b_xy": [
+    -0.039030550491345455,
+    0.08933836084186851
+   ],
+   "yaw": -0.18010564400231543,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 0,
+   "eef_above_grasp": 0.05825582040133236,
+   "finger_gap": 0.0796038770334298,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 184,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.06379833540482963,
+    -0.018103830654152532
+   ],
+   "b_xy": [
+    -0.05842927424235294,
+    -0.01731843283967918
+   ],
+   "yaw": 0.15750621473047804,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 1,
+   "height": 0.12492589656607847,
+   "finger_gap": 0.074662155769791,
+   "cube_held": false,
+   "cell": "reaching_a1_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 185,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.09952370738793236,
+    0.0004614378960406507
+   ],
+   "b_xy": [
+    0.04011643313429865,
+    -0.06948345029811447
+   ],
+   "yaw": 0.017707694660458007,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 3,
+   "eef_above_grasp": 0.031773275185612675,
+   "finger_gap": 0.05965221134755313,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 186,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.0980419247571278,
+    0.03759948923103345
+   ],
+   "b_xy": [
+    -0.014667536167639605,
+    0.04802020719280009
+   ],
+   "yaw": -0.16322161386318113,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 1,
+   "eef_above_grasp": 0.06534263788805583,
+   "finger_gap": 0.07466705513009811,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 187,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.08907499019302584,
+    -0.05942122448964489
+   ],
+   "b_xy": [
+    0.02926484136029033,
+    0.08467560289270522
+   ],
+   "yaw": -0.12275027327088944,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 4,
+   "eef_above_grasp": 0.033516300116788626,
+   "finger_gap": 0.051850922397407045,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 188,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.057013757811289235,
+    -0.019685805782494615
+   ],
+   "b_xy": [
+    -0.04242894802138591,
+    0.08128484715071355
+   ],
+   "yaw": -0.07640591928536265,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 1,
+   "eef_above_grasp": 0.0693251327264055,
+   "finger_gap": 0.07457912462236488,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 189,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.044981135324726654,
+    -0.0841050014997939
+   ],
+   "b_xy": [
+    -0.01196055996992136,
+    0.06975824312759267
+   ],
+   "yaw": 0.05076695907268665,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 1,
+   "height": 0.13681353260882273,
+   "finger_gap": 0.07465786999018681,
+   "cube_held": false,
+   "cell": "reaching_a1_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 190,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.0270770978536822,
+    -0.039005965700163396
+   ],
+   "b_xy": [
+    0.045708902823672105,
+    0.022247854195784192
+   ],
+   "yaw": 0.028411901822501574,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 5,
+   "eef_above_grasp": 0.05544949502514284,
+   "finger_gap": 0.04395782039683376,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 191,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.09789032841281398,
+    -0.00011510920762571875
+   ],
+   "b_xy": [
+    -0.09422590443527329,
+    -0.08331058138719137
+   ],
+   "yaw": 0.08524654613851582,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 6,
+   "height": 0.11421747623187221,
+   "finger_gap": 0.04168487075336896,
+   "cube_held": true,
+   "cell": "reaching_a1_h1_g1",
+   "trivial": false
+  },
+  {
+   "id": 192,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.028353469375413123,
+    -0.025485354834258914
+   ],
+   "b_xy": [
+    -0.03121856129074543,
+    0.04841779616128288
+   ],
+   "yaw": -0.003204260696239425,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 2,
+   "eef_above_grasp": 0.07577722826526778,
+   "finger_gap": 0.06728506330486153,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 193,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.03091037074216374,
+    -0.016328827793692803
+   ],
+   "b_xy": [
+    -0.049909078466435754,
+    0.05659897028093972
+   ],
+   "yaw": 0.040458237898878306,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 2,
+   "eef_above_grasp": 0.06900712972839196,
+   "finger_gap": 0.06728510296838117,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 194,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.04735120030487377,
+    -0.08818421540656114
+   ],
+   "b_xy": [
+    -0.0664906955709229,
+    -0.042145525499473285
+   ],
+   "yaw": 0.022863541337723836,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 12,
+   "height": 0.09101527358639008,
+   "finger_gap": 0.039767327149296726,
+   "cube_held": true,
+   "cell": "reaching_a1_h1_g1",
+   "trivial": false
+  },
+  {
+   "id": 195,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.04071130080805301,
+    -0.07851278004041047
+   ],
+   "b_xy": [
+    -0.03923546300469834,
+    0.039590478083661874
+   ],
+   "yaw": -0.0747554123298075,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 11,
+   "height": 0.1381205056516046,
+   "finger_gap": 0.040093934774084385,
+   "cube_held": true,
+   "cell": "reaching_a1_h1_g1",
+   "trivial": false
+  },
+  {
+   "id": 196,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.09116100019397225,
+    0.036296613104683
+   ],
+   "b_xy": [
+    -0.028681193421792872,
+    0.06356163612634501
+   ],
+   "yaw": 0.07136609150812027,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 0,
+   "eef_above_grasp": 0.02271898375114489,
+   "finger_gap": 0.07976585539320707,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 197,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.0635847790449237,
+    0.0763512124431312
+   ],
+   "b_xy": [
+    -0.058186892550948915,
+    -0.039603362479571746
+   ],
+   "yaw": -0.10397812730818519,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 11,
+   "height": 0.0816868579918054,
+   "finger_gap": 0.040881286136511055,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 198,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.03566163734204038,
+    -0.08204142803250974
+   ],
+   "b_xy": [
+    0.07820367851447024,
+    0.009480794896766299
+   ],
+   "yaw": 0.0951434014306169,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 0,
+   "height": 0.1123013011800769,
+   "finger_gap": 0.07950664321429576,
+   "cube_held": false,
+   "cell": "reaching_a1_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 199,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.02221055900023823,
+    0.09587016312883778
+   ],
+   "b_xy": [
+    0.0658208926920274,
+    -0.0754856891450815
+   ],
+   "yaw": -0.13764968324251367,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 1,
+   "eef_above_grasp": 0.0779285298216782,
+   "finger_gap": 0.07461962214834564,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 200,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.0010958615942542327,
+    -0.03568031937987226
+   ],
+   "b_xy": [
+    0.07822522918580808,
+    0.011579479792754754
+   ],
+   "yaw": -0.15611833400119274,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 0,
+   "eef_above_grasp": 0.018128739233528087,
+   "finger_gap": 0.07948420496429409,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 201,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.08892330602583526,
+    -0.024634842672674597
+   ],
+   "b_xy": [
+    0.025548469872706606,
+    0.0045413181226463765
+   ],
+   "yaw": 0.1411384488921415,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 4,
+   "eef_above_grasp": 0.00894913629481597,
+   "finger_gap": 0.05403961723263209,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 202,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.07051770630998913,
+    0.03339609531832151
+   ],
+   "b_xy": [
+    -0.06272173915415771,
+    0.07846748962909343
+   ],
+   "yaw": -0.13803506370751362,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 7,
+   "height": 0.04747025406438315,
+   "finger_gap": 0.04235958636916852,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 203,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.08988802449347909,
+    0.009669002257531246
+   ],
+   "b_xy": [
+    -0.008062065674641739,
+    -0.048488818595297925
+   ],
+   "yaw": 0.1940841266964506,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 4,
+   "eef_above_grasp": 4.830546748079822e-05,
+   "finger_gap": 0.05253659499912687,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 204,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.0912950250937713,
+    -0.09661093875469787
+   ],
+   "b_xy": [
+    0.04622504357970152,
+    -0.01771248890117978
+   ],
+   "yaw": 0.07384615012403627,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 5,
+   "eef_above_grasp": 0.05347308368708913,
+   "finger_gap": 0.04396372242317645,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 205,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.043481710714541856,
+    0.06716814241419822
+   ],
+   "b_xy": [
+    -0.014147759442237985,
+    -0.09925345752939659
+   ],
+   "yaw": 0.06425666964793515,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 4,
+   "eef_above_grasp": 0.06174615949855799,
+   "finger_gap": 0.05184159621136695,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 206,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.018510749348036117,
+    -0.06702595279784616
+   ],
+   "b_xy": [
+    -0.0686831861697168,
+    0.016567710499306432
+   ],
+   "yaw": -0.1296119230078281,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 7,
+   "height": 0.13443554724350099,
+   "finger_gap": 0.04217052018688811,
+   "cube_held": true,
+   "cell": "reaching_a1_h1_g1",
+   "trivial": false
+  },
+  {
+   "id": 207,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.08032038731581215,
+    0.08534329786002866
+   ],
+   "b_xy": [
+    0.03148779174718957,
+    -0.07672278586838782
+   ],
+   "yaw": 0.1232667931172271,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 6,
+   "height": 0.12097385274407463,
+   "finger_gap": 0.04261481962326322,
+   "cube_held": true,
+   "cell": "reaching_a1_h1_g1",
+   "trivial": false
+  },
+  {
+   "id": 208,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.0440399534545874,
+    -0.06819979049208412
+   ],
+   "b_xy": [
+    0.09738754624855664,
+    -0.024482804660247638
+   ],
+   "yaw": -0.1047114492404738,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 7,
+   "height": 0.1261088902317973,
+   "finger_gap": 0.04132617954107746,
+   "cube_held": true,
+   "cell": "reaching_a1_h1_g1",
+   "trivial": false
+  },
+  {
+   "id": 209,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.06482831568627105,
+    0.07118837536563098
+   ],
+   "b_xy": [
+    0.015732372934636054,
+    -0.009931691784547114
+   ],
+   "yaw": -0.05715212079836163,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 0,
+   "height": 0.032685081357635204,
+   "finger_gap": 0.07950670425773024,
+   "cube_held": false,
+   "cell": "reaching_a1_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 210,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.06753287228775944,
+    0.09938735949622607
+   ],
+   "b_xy": [
+    -0.0938402346227249,
+    -0.011254372086114751
+   ],
+   "yaw": -0.13503043569633996,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 0,
+   "eef_above_grasp": 0.07498899483108035,
+   "finger_gap": 0.07948453103999745,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 211,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.07591177481243111,
+    -0.09147696466361861
+   ],
+   "b_xy": [
+    0.0407216123116583,
+    0.07112072438695297
+   ],
+   "yaw": 0.02886813092068783,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 8,
+   "height": 0.05803399050956571,
+   "finger_gap": 0.04016169123908575,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 212,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.06102640762251732,
+    -0.0572444207091168
+   ],
+   "b_xy": [
+    -0.03624507454274608,
+    0.09433249893058004
+   ],
+   "yaw": 0.16423093033284766,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 2,
+   "eef_above_grasp": 0.015853478385326022,
+   "finger_gap": 0.06726163897664728,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 213,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.01478006750419021,
+    -0.048996454030712115
+   ],
+   "b_xy": [
+    -0.05118159463242647,
+    0.08836038772417926
+   ],
+   "yaw": -0.12189435373534888,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 3,
+   "height": 0.037325146349061575,
+   "finger_gap": 0.0596440233993747,
+   "cube_held": false,
+   "cell": "reaching_a1_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 214,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.05288761214193552,
+    0.09133740320446455
+   ],
+   "b_xy": [
+    -0.020557650389505834,
+    -0.03319298234427719
+   ],
+   "yaw": -0.10852219456937014,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 5,
+   "eef_above_grasp": 0.03303578518699545,
+   "finger_gap": 0.04396001592572378,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 215,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.06621846979952793,
+    -0.031042829014822207
+   ],
+   "b_xy": [
+    -0.00822846544782936,
+    0.04588501768939064
+   ],
+   "yaw": 0.13191673723407363,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 2,
+   "eef_above_grasp": 0.008293978820025024,
+   "finger_gap": 0.06729410745229639,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 216,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.007831103172411692,
+    -0.06386920498929864
+   ],
+   "b_xy": [
+    0.07804681774043108,
+    0.04701558138516276
+   ],
+   "yaw": -0.0388607608613214,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 4,
+   "eef_above_grasp": 0.039657860077653144,
+   "finger_gap": 0.05184712762460608,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 217,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.09295692942465072,
+    0.009171031131731523
+   ],
+   "b_xy": [
+    -0.02039932444242203,
+    0.07655979140783482
+   ],
+   "yaw": -0.1529112593609102,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 4,
+   "eef_above_grasp": 0.030612471716151776,
+   "finger_gap": 0.05183814390618167,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 218,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.09455310982912413,
+    -0.03301237386126552
+   ],
+   "b_xy": [
+    -0.06801830132443028,
+    0.015791923353800974
+   ],
+   "yaw": -0.154646560975324,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 4,
+   "eef_above_grasp": 0.07761430663374602,
+   "finger_gap": 0.05185137918058444,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 219,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.08558165975827632,
+    0.09575016028032551
+   ],
+   "b_xy": [
+    0.05769522729667523,
+    0.04828334648518402
+   ],
+   "yaw": -0.19567920584273432,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 2,
+   "height": 0.09266247098172513,
+   "finger_gap": 0.06728464974863602,
+   "cube_held": false,
+   "cell": "reaching_a1_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 220,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.05440179038277296,
+    0.04384591226654016
+   ],
+   "b_xy": [
+    0.08849466215267916,
+    -0.06469965791117707
+   ],
+   "yaw": -0.0005604173231247956,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 4,
+   "height": 0.0922686135566132,
+   "finger_gap": 0.05184304558196322,
+   "cube_held": false,
+   "cell": "reaching_a1_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 221,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.09384869277600727,
+    0.04180015335099929
+   ],
+   "b_xy": [
+    0.01783418752405406,
+    -0.03165196224024407
+   ],
+   "yaw": -0.18432020234686441,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 5,
+   "eef_above_grasp": 0.004711116833550739,
+   "finger_gap": 0.04575015995129231,
+   "cube_held": false,
+   "cell": "reaching_a0_h0_g0",
+   "trivial": false
+  },
+  {
+   "id": 222,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    0.031066793948857963,
+    -0.0015718137345714035
+   ],
+   "b_xy": [
+    -0.06820644783113326,
+    0.033678077107846094
+   ],
+   "yaw": -0.06449565319624533,
+   "grasp": "osc-close",
+   "airborne": false,
+   "close_steps": 5,
+   "eef_above_grasp": 0.04348124247588624,
+   "finger_gap": 0.043961243054448325,
+   "cube_held": false,
+   "cell": "reaching_a0_h1_g0",
+   "trivial": false
+  },
+  {
+   "id": 223,
+   "split": "eval",
+   "label": "reaching",
+   "limit": 200,
+   "steps_before_stack": 200,
+   "family": "reaching",
+   "a_xy": [
+    -0.040886518726114846,
+    -0.07797398604535505
+   ],
+   "b_xy": [
+    -0.01907973255179851,
+    0.07973576820831592
+   ],
+   "yaw": -0.16340823089715006,
+   "grasp": "osc-close",
+   "airborne": true,
+   "close_steps": 7,
+   "height": 0.07887112483336414,
+   "finger_gap": 0.04198963768023563,
+   "cube_held": true,
+   "cell": "reaching_a1_h0_g1",
+   "trivial": false
+  },
+  {
+   "id": 224,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.039673891493806096,
+    -0.05054814208185803
+   ],
+   "b_xy": [
+    0.041258668972254164,
+    0.05393680374472725
+   ],
+   "yaw": -0.193572510252179,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.3382795346737899,
+   "open_steps": 4,
+   "finger_gap": 0.04057978386876339,
+   "cube_held": true,
+   "cell": "grasp_p1_o0",
+   "trivial": false
+  },
+  {
+   "id": 225,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.07258444564538029,
+    -0.022151277483837786
+   ],
+   "b_xy": [
+    0.08836499127898297,
+    -0.040509287877450055
+   ],
+   "yaw": -0.09659322737333711,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.9840720012632694,
+   "open_steps": 8,
+   "finger_gap": 0.060372520192604785,
+   "cube_held": false,
+   "cell": "grasp_p3_o1",
+   "trivial": false
+  },
+  {
+   "id": 226,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.061481895623578045,
+    -0.06672258162379832
+   ],
+   "b_xy": [
+    0.026376013093880137,
+    0.07499116208299639
+   ],
+   "yaw": 0.05412322718200322,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.8842676454068614,
+   "open_steps": 1,
+   "finger_gap": 0.03987720260735787,
+   "cube_held": true,
+   "cell": "grasp_p3_o0",
+   "trivial": false
+  },
+  {
+   "id": 227,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.055662136995963035,
+    0.0923269319035946
+   ],
+   "b_xy": [
+    0.04270738311516538,
+    -0.04137454530327658
+   ],
+   "yaw": -0.18154080499888015,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.12965742301683303,
+   "open_steps": 8,
+   "finger_gap": 0.06037966438969849,
+   "cube_held": false,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 228,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.045837449233221556,
+    0.06667605041566438
+   ],
+   "b_xy": [
+    0.026832418137189753,
+    -0.04551583646247351
+   ],
+   "yaw": 0.006893547425160795,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.7420339281026641,
+   "open_steps": 0,
+   "finger_gap": 0.03972463862711243,
+   "cube_held": true,
+   "cell": "grasp_p2_o0",
+   "trivial": false
+  },
+  {
+   "id": 229,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.05323475764330792,
+    0.09406116918070202
+   ],
+   "b_xy": [
+    -0.02558848978753039,
+    -0.05798321238798046
+   ],
+   "yaw": -0.037375889469275815,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.8015427646787867,
+   "open_steps": 2,
+   "finger_gap": 0.040032346002204455,
+   "cube_held": true,
+   "cell": "grasp_p3_o0",
+   "trivial": false
+  },
+  {
+   "id": 230,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.07980623635584655,
+    0.0819202538322583
+   ],
+   "b_xy": [
+    -0.060688170596750426,
+    -0.06827820814410106
+   ],
+   "yaw": 0.0813363756384681,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.02130047939120583,
+   "open_steps": 5,
+   "finger_gap": 0.04093783608672445,
+   "cube_held": true,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 231,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.09937845899465542,
+    -0.01292136711524785
+   ],
+   "b_xy": [
+    -0.09917275688139347,
+    0.02822642834005669
+   ],
+   "yaw": 0.06577942596464688,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.24898009964448364,
+   "open_steps": 5,
+   "finger_gap": 0.04093790593646662,
+   "cube_held": true,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 232,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.09739058757100723,
+    0.03393731447800776
+   ],
+   "b_xy": [
+    0.016246582966868428,
+    0.03917932705668736
+   ],
+   "yaw": 0.06496619172716503,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.10525924613377624,
+   "open_steps": 9,
+   "finger_gap": 0.06816201014669965,
+   "cube_held": false,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 233,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.07102452456818971,
+    -0.026499995561141267
+   ],
+   "b_xy": [
+    0.021834381392129988,
+    -0.06873430614958025
+   ],
+   "yaw": 0.15489371005257185,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.6233919197710509,
+   "open_steps": 1,
+   "finger_gap": 0.03990228969499229,
+   "cube_held": true,
+   "cell": "grasp_p2_o0",
+   "trivial": false
+  },
+  {
+   "id": 234,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.08876278147594129,
+    0.06232155448718357
+   ],
+   "b_xy": [
+    0.06993349505096128,
+    0.0033410705559946186
+   ],
+   "yaw": -0.11301524022336618,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.5834826876919582,
+   "open_steps": 2,
+   "finger_gap": 0.04005239851690888,
+   "cube_held": true,
+   "cell": "grasp_p2_o0",
+   "trivial": false
+  },
+  {
+   "id": 235,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.045342576318748495,
+    -0.09874442263457653
+   ],
+   "b_xy": [
+    -0.09924018946116493,
+    0.003535648377361134
+   ],
+   "yaw": 0.045846025901423594,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.20567845241333815,
+   "open_steps": 2,
+   "finger_gap": 0.04003726811870345,
+   "cube_held": true,
+   "cell": "grasp_p0_o0",
+   "trivial": false
+  },
+  {
+   "id": 236,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.001568572027017723,
+    -0.051170472149552726
+   ],
+   "b_xy": [
+    -0.004785583124550308,
+    0.07762464156805149
+   ],
+   "yaw": 0.11899679334360475,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.5032515323669629,
+   "open_steps": 7,
+   "finger_gap": 0.052747036236821296,
+   "cube_held": false,
+   "cell": "grasp_p2_o1",
+   "trivial": false
+  },
+  {
+   "id": 237,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.08797793959573302,
+    0.060384826247141345
+   ],
+   "b_xy": [
+    -0.0014261029060030684,
+    -0.00331631209482941
+   ],
+   "yaw": -0.1203466495198669,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.9317974559259947,
+   "open_steps": 4,
+   "finger_gap": 0.04056003379751122,
+   "cube_held": true,
+   "cell": "grasp_p3_o0",
+   "trivial": false
+  },
+  {
+   "id": 238,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.08096718216986963,
+    0.09575622940031198
+   ],
+   "b_xy": [
+    -0.05036134391434064,
+    0.006341588365644357
+   ],
+   "yaw": 0.12235955692210099,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.7885217226326272,
+   "open_steps": 8,
+   "finger_gap": 0.06037311425589777,
+   "cube_held": false,
+   "cell": "grasp_p3_o1",
+   "trivial": false
+  },
+  {
+   "id": 239,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.02078920580062542,
+    0.08002446889308107
+   ],
+   "b_xy": [
+    -0.08367595857122578,
+    -0.051017616385277575
+   ],
+   "yaw": 0.020931061877777248,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.9335467800844687,
+   "open_steps": 3,
+   "finger_gap": 0.04024232400549167,
+   "cube_held": true,
+   "cell": "grasp_p3_o0",
+   "trivial": false
+  },
+  {
+   "id": 240,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.06409545346776306,
+    -0.037095317573073563
+   ],
+   "b_xy": [
+    -0.07240386282837623,
+    -0.039689301333091453
+   ],
+   "yaw": 0.01081812824643711,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.7780035779228596,
+   "open_steps": 6,
+   "finger_gap": 0.04541235127342877,
+   "cube_held": false,
+   "cell": "grasp_p3_o1",
+   "trivial": false
+  },
+  {
+   "id": 241,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.08674860508526752,
+    0.07593776578384459
+   ],
+   "b_xy": [
+    0.07587352615648701,
+    0.018167987679701205
+   ],
+   "yaw": -0.17882912267646367,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.9038403380846678,
+   "open_steps": 3,
+   "finger_gap": 0.04036977563152818,
+   "cube_held": true,
+   "cell": "grasp_p3_o0",
+   "trivial": false
+  },
+  {
+   "id": 242,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.046360650092460244,
+    0.06203871738962237
+   ],
+   "b_xy": [
+    0.0033307290212854393,
+    -0.030209168524444954
+   ],
+   "yaw": 0.1589970015335147,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.618696300949098,
+   "open_steps": 8,
+   "finger_gap": 0.06037442439050132,
+   "cube_held": false,
+   "cell": "grasp_p2_o1",
+   "trivial": false
+  },
+  {
+   "id": 243,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.03546807339473741,
+    -0.09196719302209964
+   ],
+   "b_xy": [
+    0.06668665614175905,
+    0.033436964908794886
+   ],
+   "yaw": 0.14341148790378666,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.7314485285975814,
+   "open_steps": 4,
+   "finger_gap": 0.04055705154164787,
+   "cube_held": true,
+   "cell": "grasp_p2_o0",
+   "trivial": false
+  },
+  {
+   "id": 244,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.014349301816395177,
+    0.031302894843585484
+   ],
+   "b_xy": [
+    -0.057115573921142554,
+    -0.06479575119570147
+   ],
+   "yaw": -0.02016975889868902,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.32097727413664523,
+   "open_steps": 8,
+   "finger_gap": 0.060372113738443506,
+   "cube_held": false,
+   "cell": "grasp_p1_o1",
+   "trivial": false
+  },
+  {
+   "id": 245,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.06769891296630795,
+    0.015813288224805544
+   ],
+   "b_xy": [
+    0.03703185655439467,
+    -0.022335946413402488
+   ],
+   "yaw": -0.1419438401349333,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.04649093399523374,
+   "open_steps": 4,
+   "finger_gap": 0.040552468562324626,
+   "cube_held": true,
+   "cell": "grasp_p0_o0",
+   "trivial": false
+  },
+  {
+   "id": 246,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.023854755314726295,
+    0.09398632614972242
+   ],
+   "b_xy": [
+    0.06050786104454438,
+    -0.03519297182930403
+   ],
+   "yaw": 0.030710389602462397,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.2855963942993658,
+   "open_steps": 2,
+   "finger_gap": 0.04003729505612765,
+   "cube_held": true,
+   "cell": "grasp_p1_o0",
+   "trivial": false
+  },
+  {
+   "id": 247,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.053064593997136617,
+    -0.08168261043914045
+   ],
+   "b_xy": [
+    0.019293471433408562,
+    0.07844135712047712
+   ],
+   "yaw": 0.0029114981942234943,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.1101307545517568,
+   "open_steps": 4,
+   "finger_gap": 0.04054527636623661,
+   "cube_held": true,
+   "cell": "grasp_p0_o0",
+   "trivial": false
+  },
+  {
+   "id": 248,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.06997655533635941,
+    0.03903914400696471
+   ],
+   "b_xy": [
+    0.09412761393644348,
+    0.09414639841819705
+   ],
+   "yaw": 0.17560154474569534,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.520164492744388,
+   "open_steps": 0,
+   "finger_gap": 0.03978306012964962,
+   "cube_held": true,
+   "cell": "grasp_p2_o0",
+   "trivial": false
+  },
+  {
+   "id": 249,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.005096382354481155,
+    -0.055892259279491444
+   ],
+   "b_xy": [
+    0.09123408986769924,
+    0.032526108799639575
+   ],
+   "yaw": -0.059914437987862404,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.5594789216640121,
+   "open_steps": 7,
+   "finger_gap": 0.05274626754527062,
+   "cube_held": false,
+   "cell": "grasp_p2_o1",
+   "trivial": false
+  },
+  {
+   "id": 250,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.03674220614163728,
+    -0.097276328116533
+   ],
+   "b_xy": [
+    -0.07524019129971511,
+    -0.000403983787571427
+   ],
+   "yaw": 0.0719957340747277,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.31056311339762865,
+   "open_steps": 8,
+   "finger_gap": 0.060372116578725016,
+   "cube_held": false,
+   "cell": "grasp_p1_o1",
+   "trivial": false
+  },
+  {
+   "id": 251,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.05916600300431323,
+    -0.046778412988364874
+   ],
+   "b_xy": [
+    0.05033424707415737,
+    0.0722676375602866
+   ],
+   "yaw": 0.10344987546512896,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.21416115462428098,
+   "open_steps": 8,
+   "finger_gap": 0.060372509091456986,
+   "cube_held": false,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 252,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.00870308902021082,
+    -0.09966056041103098
+   ],
+   "b_xy": [
+    0.08528658957105562,
+    0.0691915642127444
+   ],
+   "yaw": -0.06089938711757448,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.8391491597997044,
+   "open_steps": 5,
+   "finger_gap": 0.040972247706608074,
+   "cube_held": true,
+   "cell": "grasp_p3_o1",
+   "trivial": false
+  },
+  {
+   "id": 253,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.09987652850268619,
+    -0.03337545545028993
+   ],
+   "b_xy": [
+    0.02534092611853187,
+    0.04693833376133188
+   ],
+   "yaw": -0.14093992722092744,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.7097828751735095,
+   "open_steps": 7,
+   "finger_gap": 0.05275309043120088,
+   "cube_held": false,
+   "cell": "grasp_p2_o1",
+   "trivial": false
+  },
+  {
+   "id": 254,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.07171492780112483,
+    0.09778887951369526
+   ],
+   "b_xy": [
+    -0.022094033587417197,
+    0.007185692816674739
+   ],
+   "yaw": -0.12402286759150988,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.5900725572660903,
+   "open_steps": 3,
+   "finger_gap": 0.04025852405095619,
+   "cube_held": true,
+   "cell": "grasp_p2_o0",
+   "trivial": false
+  },
+  {
+   "id": 255,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.05846795502442137,
+    -0.016478427811374298
+   ],
+   "b_xy": [
+    0.03606503325697239,
+    0.05874418384562805
+   ],
+   "yaw": 0.1083002165848487,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.6514206235669302,
+   "open_steps": 1,
+   "finger_gap": 0.039870552201291445,
+   "cube_held": true,
+   "cell": "grasp_p2_o0",
+   "trivial": false
+  },
+  {
+   "id": 256,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.04313791523048652,
+    -0.01108064947938725
+   ],
+   "b_xy": [
+    0.06132680615135973,
+    0.06615027285027404
+   ],
+   "yaw": 0.028503875670587455,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.3569341145507722,
+   "open_steps": 4,
+   "finger_gap": 0.0405456830038876,
+   "cube_held": true,
+   "cell": "grasp_p1_o0",
+   "trivial": false
+  },
+  {
+   "id": 257,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.06127192421352019,
+    0.05714244322640741
+   ],
+   "b_xy": [
+    0.0738791380487559,
+    0.00525094501832879
+   ],
+   "yaw": 0.09157588146883296,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.045003269637680865,
+   "open_steps": 3,
+   "finger_gap": 0.0402513751480039,
+   "cube_held": true,
+   "cell": "grasp_p0_o0",
+   "trivial": false
+  },
+  {
+   "id": 258,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.0258822450674028,
+    0.07123938991408856
+   ],
+   "b_xy": [
+    0.025762308266069622,
+    -0.07804821322952014
+   ],
+   "yaw": 0.07175570862890157,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.7174333917760765,
+   "open_steps": 9,
+   "finger_gap": 0.06816224591559202,
+   "cube_held": false,
+   "cell": "grasp_p2_o1",
+   "trivial": false
+  },
+  {
+   "id": 259,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.08915982572834834,
+    -0.0387403206477039
+   ],
+   "b_xy": [
+    -0.005448399444474151,
+    -0.018347074506410044
+   ],
+   "yaw": 0.04415657128258213,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.47789033594224817,
+   "open_steps": 0,
+   "finger_gap": 0.03973684855364433,
+   "cube_held": true,
+   "cell": "grasp_p1_o0",
+   "trivial": false
+  },
+  {
+   "id": 260,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.05198529854017049,
+    -0.05679244709654781
+   ],
+   "b_xy": [
+    0.06739841230862523,
+    0.011765692049024647
+   ],
+   "yaw": 0.1820770534931397,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.9516185653814417,
+   "open_steps": 4,
+   "finger_gap": 0.040576895585495,
+   "cube_held": true,
+   "cell": "grasp_p3_o0",
+   "trivial": false
+  },
+  {
+   "id": 261,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.06221868627337555,
+    0.012132398652730015
+   ],
+   "b_xy": [
+    -0.008978518429597338,
+    -0.09223642413833273
+   ],
+   "yaw": -0.026082425590498427,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.22143559560812354,
+   "open_steps": 8,
+   "finger_gap": 0.060372116775920096,
+   "cube_held": false,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 262,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.08841138531666147,
+    0.09092021563221862
+   ],
+   "b_xy": [
+    -0.08698320571393217,
+    -0.08540715211909898
+   ],
+   "yaw": -0.01621077823528947,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.9578128845475523,
+   "open_steps": 9,
+   "finger_gap": 0.0681618693862695,
+   "cube_held": false,
+   "cell": "grasp_p3_o1",
+   "trivial": false
+  },
+  {
+   "id": 263,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.05445323869598502,
+    -0.09277692639320444
+   ],
+   "b_xy": [
+    -0.061413472565344976,
+    -0.05098382907565684
+   ],
+   "yaw": 0.15499882496557937,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.08203905114659193,
+   "open_steps": 3,
+   "finger_gap": 0.04026179899735016,
+   "cube_held": true,
+   "cell": "grasp_p0_o0",
+   "trivial": false
+  },
+  {
+   "id": 264,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.04434773130817837,
+    -0.09960878822922964
+   ],
+   "b_xy": [
+    -0.009955137053490715,
+    0.012297565890959629
+   ],
+   "yaw": -0.19758123792334392,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.3044989614839154,
+   "open_steps": 1,
+   "finger_gap": 0.03993944196934404,
+   "cube_held": true,
+   "cell": "grasp_p1_o0",
+   "trivial": false
+  },
+  {
+   "id": 265,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.049082435591536244,
+    -0.051430351349518705
+   ],
+   "b_xy": [
+    -0.08438439715367115,
+    -0.07881298752025023
+   ],
+   "yaw": -0.1097735652915449,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.19622553721539715,
+   "open_steps": 5,
+   "finger_gap": 0.040949407691246276,
+   "cube_held": true,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 266,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.00961947025743597,
+    -0.07491501163096426
+   ],
+   "b_xy": [
+    0.04378103994228262,
+    0.08779354915335708
+   ],
+   "yaw": 0.14881353610151757,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.34654077872267897,
+   "open_steps": 1,
+   "finger_gap": 0.03990830345760549,
+   "cube_held": true,
+   "cell": "grasp_p1_o0",
+   "trivial": false
+  },
+  {
+   "id": 267,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.06925429531843878,
+    -0.022949927664429583
+   ],
+   "b_xy": [
+    0.09073085726702967,
+    0.05834120225721329
+   ],
+   "yaw": -0.095889599030268,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.6836666363608993,
+   "open_steps": 6,
+   "finger_gap": 0.04541390598394422,
+   "cube_held": false,
+   "cell": "grasp_p2_o1",
+   "trivial": false
+  },
+  {
+   "id": 268,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.00719617678207678,
+    -0.0957042990742219
+   ],
+   "b_xy": [
+    -0.06567930690372288,
+    0.08526976279365735
+   ],
+   "yaw": 0.16222888721382156,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.31087177219866335,
+   "open_steps": 7,
+   "finger_gap": 0.05274918185594143,
+   "cube_held": false,
+   "cell": "grasp_p1_o1",
+   "trivial": false
+  },
+  {
+   "id": 269,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.07718413849057618,
+    -0.017192569664631476
+   ],
+   "b_xy": [
+    -0.029353215378176523,
+    0.09028666890571019
+   ],
+   "yaw": 0.05857166252502158,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.230856378396201,
+   "open_steps": 5,
+   "finger_gap": 0.04093877906899281,
+   "cube_held": true,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 270,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.06696920863788978,
+    0.018553474848455733
+   ],
+   "b_xy": [
+    -0.055794737726066246,
+    0.06905925905017367
+   ],
+   "yaw": -0.07474497216298052,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.6047594618271053,
+   "open_steps": 9,
+   "finger_gap": 0.06816223664668138,
+   "cube_held": false,
+   "cell": "grasp_p2_o1",
+   "trivial": false
+  },
+  {
+   "id": 271,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.03710654553360955,
+    -0.07168096239739628
+   ],
+   "b_xy": [
+    0.07990952380207184,
+    -0.09186609675693316
+   ],
+   "yaw": 0.06463424857969838,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.5225903946633533,
+   "open_steps": 2,
+   "finger_gap": 0.04003716787840958,
+   "cube_held": true,
+   "cell": "grasp_p2_o0",
+   "trivial": false
+  },
+  {
+   "id": 272,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.019349790203121844,
+    0.01638671084308965
+   ],
+   "b_xy": [
+    0.040053117891577394,
+    -0.05491966815832508
+   ],
+   "yaw": 0.015621589743661658,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.44907572506703175,
+   "open_steps": 1,
+   "finger_gap": 0.03987298608142842,
+   "cube_held": true,
+   "cell": "grasp_p1_o0",
+   "trivial": false
+  },
+  {
+   "id": 273,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.046414403060293874,
+    0.06523698166418342
+   ],
+   "b_xy": [
+    -0.09713558982251747,
+    0.012945607583552189
+   ],
+   "yaw": 0.004738573299084204,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.574693543984839,
+   "open_steps": 8,
+   "finger_gap": 0.06037211151315583,
+   "cube_held": false,
+   "cell": "grasp_p2_o1",
+   "trivial": false
+  },
+  {
+   "id": 274,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.09619484541905605,
+    -0.03247496158951455
+   ],
+   "b_xy": [
+    -0.07631313153340098,
+    -0.04392014631643169
+   ],
+   "yaw": -0.196803753671293,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.9145483314588861,
+   "open_steps": 9,
+   "finger_gap": 0.06816447403235618,
+   "cube_held": false,
+   "cell": "grasp_p3_o1",
+   "trivial": false
+  },
+  {
+   "id": 275,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.010926200501558148,
+    -0.088651556933607
+   ],
+   "b_xy": [
+    0.049097366831900226,
+    -0.012248797209281737
+   ],
+   "yaw": -0.08186658507777889,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.32635833470689735,
+   "open_steps": 4,
+   "finger_gap": 0.040547022045701264,
+   "cube_held": true,
+   "cell": "grasp_p1_o0",
+   "trivial": false
+  },
+  {
+   "id": 276,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.08761381147442909,
+    -0.06028406016989001
+   ],
+   "b_xy": [
+    -0.09171987008651926,
+    0.05101230053695996
+   ],
+   "yaw": -0.039138438362290896,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.8381105356622798,
+   "open_steps": 4,
+   "finger_gap": 0.04054524232592803,
+   "cube_held": true,
+   "cell": "grasp_p3_o0",
+   "trivial": false
+  },
+  {
+   "id": 277,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.08345165045307357,
+    0.03855772342709762
+   ],
+   "b_xy": [
+    -0.03519575864494347,
+    0.09199932966900495
+   ],
+   "yaw": -0.008072471945607519,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.18633746150739794,
+   "open_steps": 3,
+   "finger_gap": 0.04024263982379536,
+   "cube_held": true,
+   "cell": "grasp_p0_o0",
+   "trivial": false
+  },
+  {
+   "id": 278,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.09954746485412798,
+    -0.010294742545390735
+   ],
+   "b_xy": [
+    0.09640636468642186,
+    -0.0016706565525000938
+   ],
+   "yaw": -0.035851508772185216,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.8390241052642491,
+   "open_steps": 9,
+   "finger_gap": 0.0681620554735664,
+   "cube_held": false,
+   "cell": "grasp_p3_o1",
+   "trivial": false
+  },
+  {
+   "id": 279,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.007434782183583822,
+    0.09459071432900579
+   ],
+   "b_xy": [
+    -0.0875435422619708,
+    0.07253108017511652
+   ],
+   "yaw": -0.1891503055877728,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.8690052165280973,
+   "open_steps": 9,
+   "finger_gap": 0.06816715526036651,
+   "cube_held": false,
+   "cell": "grasp_p3_o1",
+   "trivial": false
+  },
+  {
+   "id": 280,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.0906623579437874,
+    -0.07938554924111108
+   ],
+   "b_xy": [
+    0.041213203715787385,
+    0.054261918295898354
+   ],
+   "yaw": -0.06859947017594728,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.8456640459972595,
+   "open_steps": 7,
+   "finger_gap": 0.052746270113518054,
+   "cube_held": false,
+   "cell": "grasp_p3_o1",
+   "trivial": false
+  },
+  {
+   "id": 281,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.06162087974232076,
+    0.058190771588252616
+   ],
+   "b_xy": [
+    0.08769384153144047,
+    -0.06943601845419703
+   ],
+   "yaw": -0.19432978227354358,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.21178614001860419,
+   "open_steps": 2,
+   "finger_gap": 0.040145588043907984,
+   "cube_held": true,
+   "cell": "grasp_p0_o0",
+   "trivial": false
+  },
+  {
+   "id": 282,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.01832207895683078,
+    -0.0554011840779419
+   ],
+   "b_xy": [
+    0.05939954246925621,
+    0.022954226116631383
+   ],
+   "yaw": 0.12377936125603908,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.9365382985175005,
+   "open_steps": 2,
+   "finger_gap": 0.04005393395283101,
+   "cube_held": true,
+   "cell": "grasp_p3_o0",
+   "trivial": false
+  },
+  {
+   "id": 283,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.06866861300870757,
+    -0.027328411669069453
+   ],
+   "b_xy": [
+    -0.03354695410402342,
+    -0.06450315192843917
+   ],
+   "yaw": 0.004475818012798394,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.8257522972997414,
+   "open_steps": 0,
+   "finger_gap": 0.0397246404380765,
+   "cube_held": true,
+   "cell": "grasp_p3_o0",
+   "trivial": false
+  },
+  {
+   "id": 284,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.05875657204974323,
+    0.0701111281552558
+   ],
+   "b_xy": [
+    -0.07951155055807309,
+    0.059660216975157956
+   ],
+   "yaw": -0.18762373112525943,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.04471728391798324,
+   "open_steps": 8,
+   "finger_gap": 0.06037668435075186,
+   "cube_held": false,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 285,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.05431818739763437,
+    0.01690768370904774
+   ],
+   "b_xy": [
+    -0.050200643409334944,
+    0.08163828352962058
+   ],
+   "yaw": -0.012725091875230455,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.18555701396889335,
+   "open_steps": 5,
+   "finger_gap": 0.0409368945594903,
+   "cube_held": true,
+   "cell": "grasp_p0_o1",
+   "trivial": false
+  },
+  {
+   "id": 286,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    -0.025345798871787874,
+    -0.009285102549202917
+   ],
+   "b_xy": [
+    0.092489582310562,
+    -0.07341905807165881
+   ],
+   "yaw": 0.16743434372263788,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.3671750929087567,
+   "open_steps": 9,
+   "finger_gap": 0.0681640198121842,
+   "cube_held": false,
+   "cell": "grasp_p1_o1",
+   "trivial": false
+  },
+  {
+   "id": 287,
+   "split": "eval",
+   "label": "grasp",
+   "limit": 150,
+   "steps_before_stack": 150,
+   "family": "grasp",
+   "a_xy": [
+    0.07249459504459006,
+    -0.03990330629827019
+   ],
+   "b_xy": [
+    0.033578675951122516,
+    0.09543397142058535
+   ],
+   "yaw": 0.18319827812813425,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "path_fraction": 0.19949664681742496,
+   "open_steps": 0,
+   "finger_gap": 0.039806761557418656,
+   "cube_held": true,
+   "cell": "grasp_p0_o0",
+   "trivial": false
+  },
+  {
+   "id": 288,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.06408820664443349,
+    0.053056629163192454
+   ],
+   "b_xy": [
+    0.07401785473056673,
+    0.007797102127253309
+   ],
+   "yaw": -0.057288824200767065,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.9818737876343177,
+   "open_steps": 5,
+   "finger_gap": 0.04093757899223633,
+   "cube_held": true,
+   "cell": "near_goal_d3_o1",
+   "trivial": false
+  },
+  {
+   "id": 289,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.06447765835848795,
+    -0.039266949422130985
+   ],
+   "b_xy": [
+    0.0013361407582809682,
+    0.041680103153566496
+   ],
+   "yaw": 0.09527316103538662,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.9878182969217909,
+   "open_steps": 8,
+   "finger_gap": 0.06037258366002486,
+   "cube_held": false,
+   "cell": "near_goal_d3_o1",
+   "trivial": false
+  },
+  {
+   "id": 290,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.005275545533147463,
+    -0.092617578457821
+   ],
+   "b_xy": [
+    0.06177287511123602,
+    -0.004902048002811132
+   ],
+   "yaw": 0.1626798907241613,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.4803943450691098,
+   "open_steps": 1,
+   "finger_gap": 0.0401161310352427,
+   "cube_held": true,
+   "cell": "near_goal_d1_o0",
+   "trivial": false
+  },
+  {
+   "id": 291,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.0029273650255386753,
+    0.043905539928893705
+   ],
+   "b_xy": [
+    0.04717876022913055,
+    -0.05300402265446807
+   ],
+   "yaw": 0.07082018752251944,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 1.0940931116229329,
+   "open_steps": 8,
+   "finger_gap": 0.06037245141100241,
+   "cube_held": false,
+   "cell": "near_goal_d3_o1",
+   "trivial": false
+  },
+  {
+   "id": 292,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.0672310515856006,
+    -0.07804590428229906
+   ],
+   "b_xy": [
+    0.08668692511789713,
+    0.08298974159274297
+   ],
+   "yaw": -0.18307277593144972,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.6827716394944205,
+   "open_steps": 6,
+   "finger_gap": 0.04544284068806924,
+   "cube_held": false,
+   "cell": "near_goal_d2_o1",
+   "trivial": false
+  },
+  {
+   "id": 293,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.019001363677074747,
+    -0.009089274937467208
+   ],
+   "b_xy": [
+    -0.07732336280765717,
+    -0.09400653268278195
+   ],
+   "yaw": -0.12457096033106443,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.3505408845578508,
+   "open_steps": 5,
+   "finger_gap": 0.04099893041015269,
+   "cube_held": true,
+   "cell": "near_goal_d1_o1",
+   "trivial": false
+  },
+  {
+   "id": 294,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.05142600191281313,
+    -0.03238945908770379
+   ],
+   "b_xy": [
+    -0.031675464034049264,
+    0.024460058166771284
+   ],
+   "yaw": -0.19776293826607586,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.03385123468451288,
+   "open_steps": 7,
+   "finger_gap": 0.052784232773576564,
+   "cube_held": false,
+   "cell": "near_goal_d0_o1",
+   "trivial": false
+  },
+  {
+   "id": 295,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.08003979506871686,
+    0.008582913793988145
+   ],
+   "b_xy": [
+    -0.09496002930573383,
+    -0.07634270405301202
+   ],
+   "yaw": 0.08153255486454634,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.6846382746756479,
+   "open_steps": 2,
+   "finger_gap": 0.040037990753876165,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": false
+  },
+  {
+   "id": 296,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.025585677771003713,
+    0.006881278385861767
+   ],
+   "b_xy": [
+    -0.08902482540624689,
+    0.09819655904966074
+   ],
+   "yaw": -0.18611729253815867,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.6688718362101954,
+   "open_steps": 1,
+   "finger_gap": 0.03997309948037951,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": false
+  },
+  {
+   "id": 297,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.00381674877377558,
+    0.07472334607419998
+   ],
+   "b_xy": [
+    -0.04178463838804689,
+    -0.08037692384413216
+   ],
+   "yaw": 0.006912864070189962,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.8728080831330242,
+   "open_steps": 2,
+   "finger_gap": 0.04014021504631493,
+   "cube_held": true,
+   "cell": "near_goal_d3_o0",
+   "trivial": false
+  },
+  {
+   "id": 298,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.09264753510128619,
+    -0.02962151717352326
+   ],
+   "b_xy": [
+    0.006279058664431414,
+    -0.061489144751234105
+   ],
+   "yaw": 0.10530552193647057,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.9469444782483412,
+   "open_steps": 6,
+   "finger_gap": 0.04541451005098201,
+   "cube_held": false,
+   "cell": "near_goal_d3_o1",
+   "trivial": false
+  },
+  {
+   "id": 299,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.08563489224457668,
+    0.03622970420897658
+   ],
+   "b_xy": [
+    -0.0848870602323141,
+    0.07638082559588687
+   ],
+   "yaw": -0.06538374296905945,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.8074652380328704,
+   "open_steps": 3,
+   "finger_gap": 0.04024832005259725,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": false
+  },
+  {
+   "id": 300,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.06662723867184399,
+    -0.03782801188291496
+   ],
+   "b_xy": [
+    0.09743306685697013,
+    0.09212772569708305
+   ],
+   "yaw": 0.06744174111436023,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.9613834979143182,
+   "open_steps": 1,
+   "finger_gap": 0.03987742131100864,
+   "cube_held": true,
+   "cell": "near_goal_d3_o0",
+   "trivial": false
+  },
+  {
+   "id": 301,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.03752268677802759,
+    -0.048783075670452106
+   ],
+   "b_xy": [
+    -0.0909233354954055,
+    0.01388750645852277
+   ],
+   "yaw": -0.17461386981250612,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.8213060524315592,
+   "open_steps": 3,
+   "finger_gap": 0.04033619488214406,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": false
+  },
+  {
+   "id": 302,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.09255057074083972,
+    0.02668074138158998
+   ],
+   "b_xy": [
+    -0.04398479037423808,
+    -0.08726623473901121
+   ],
+   "yaw": -0.06935727472172366,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.36432961406795794,
+   "open_steps": 4,
+   "finger_gap": 0.04054752458300353,
+   "cube_held": true,
+   "cell": "near_goal_d1_o0",
+   "trivial": false
+  },
+  {
+   "id": 303,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.061926083431165235,
+    0.05357775031149146
+   ],
+   "b_xy": [
+    0.027453471135846244,
+    -0.09916098328305581
+   ],
+   "yaw": -0.05881256883112838,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.9418640469223334,
+   "open_steps": 8,
+   "finger_gap": 0.06037210993728094,
+   "cube_held": false,
+   "cell": "near_goal_d3_o1",
+   "trivial": false
+  },
+  {
+   "id": 304,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.03307989773293259,
+    -0.07743051307706583
+   ],
+   "b_xy": [
+    -0.03993873461181721,
+    0.018851776890463846
+   ],
+   "yaw": -0.010576732699519155,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.927409086291787,
+   "open_steps": 5,
+   "finger_gap": 0.04093689387516329,
+   "cube_held": true,
+   "cell": "near_goal_d3_o1",
+   "trivial": false
+  },
+  {
+   "id": 305,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.027631919531054795,
+    0.08488399634483575
+   ],
+   "b_xy": [
+    -0.09433752890091074,
+    -0.060869817152120656
+   ],
+   "yaw": 0.17652069966417683,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.11722917496365977,
+   "open_steps": 0,
+   "finger_gap": 0.039851850062450005,
+   "cube_held": true,
+   "cell": "near_goal_d0_o0",
+   "trivial": false
+  },
+  {
+   "id": 306,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.005618148005697554,
+    -0.004108782028234681
+   ],
+   "b_xy": [
+    0.09322145526163533,
+    -0.005345067931910231
+   ],
+   "yaw": 0.1177791720107079,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.9494913261147199,
+   "open_steps": 7,
+   "finger_gap": 0.05274819518758516,
+   "cube_held": false,
+   "cell": "near_goal_d3_o1",
+   "trivial": false
+  },
+  {
+   "id": 307,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.09402484858283884,
+    0.024952188177962898
+   ],
+   "b_xy": [
+    -0.018247505507700292,
+    0.0637867828151873
+   ],
+   "yaw": 0.010447120922670772,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.09298680840892883,
+   "open_steps": 1,
+   "finger_gap": 0.03987813312064234,
+   "cube_held": true,
+   "cell": "near_goal_d0_o0",
+   "trivial": false
+  },
+  {
+   "id": 308,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.04288275031844584,
+    -0.07537803289677168
+   ],
+   "b_xy": [
+    -0.007976584972841995,
+    0.09140923140440474
+   ],
+   "yaw": 0.16494573910064642,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.797584928437704,
+   "open_steps": 0,
+   "finger_gap": 0.0397782296217314,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": false
+  },
+  {
+   "id": 309,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.08560804450467535,
+    0.0596517204754667
+   ],
+   "b_xy": [
+    -0.0788907949338674,
+    0.05961097430835654
+   ],
+   "yaw": 0.13680356535040428,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.8075857102866165,
+   "open_steps": 4,
+   "finger_gap": 0.04056294168263006,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": false
+  },
+  {
+   "id": 310,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.094652520609892,
+    0.046361581786986794
+   ],
+   "b_xy": [
+    0.022643752864849875,
+    -0.07227944085202678
+   ],
+   "yaw": -0.09301706500524776,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.3322947359741539,
+   "open_steps": 5,
+   "finger_gap": 0.040967156597677204,
+   "cube_held": true,
+   "cell": "near_goal_d1_o1",
+   "trivial": false
+  },
+  {
+   "id": 311,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.09641705392422853,
+    -0.06027559066131543
+   ],
+   "b_xy": [
+    -0.026046070000974586,
+    0.038827264329613566
+   ],
+   "yaw": 0.12899110333497463,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.7151831356960678,
+   "open_steps": 2,
+   "finger_gap": 0.04006988082474858,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": false
+  },
+  {
+   "id": 312,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.0764589005092867,
+    0.06905094880358353
+   ],
+   "b_xy": [
+    -0.09509656203785943,
+    -0.03972519047365644
+   ],
+   "yaw": 0.009455482335743516,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.7341484339935819,
+   "open_steps": 9,
+   "finger_gap": 0.0681618389942008,
+   "cube_held": false,
+   "cell": "near_goal_d2_o1",
+   "trivial": false
+  },
+  {
+   "id": 313,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.0011706135426400755,
+    0.007870077111437324
+   ],
+   "b_xy": [
+    0.0922794513233807,
+    -0.09610935689326275
+   ],
+   "yaw": 0.12484450161727914,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.4471428082576647,
+   "open_steps": 8,
+   "finger_gap": 0.06037447010521927,
+   "cube_held": false,
+   "cell": "near_goal_d1_o1",
+   "trivial": false
+  },
+  {
+   "id": 314,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.04761172859265228,
+    0.08993122808608421
+   ],
+   "b_xy": [
+    -0.027629905869141783,
+    0.019071279208087488
+   ],
+   "yaw": 0.10940241050186131,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.2634089251708683,
+   "open_steps": 1,
+   "finger_gap": 0.03990061111176882,
+   "cube_held": true,
+   "cell": "near_goal_d0_o0",
+   "trivial": false
+  },
+  {
+   "id": 315,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.048113504344100735,
+    0.06387826611973553
+   ],
+   "b_xy": [
+    -0.02081795865161411,
+    -0.07851546497413682
+   ],
+   "yaw": 0.10478109523010644,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.07561417901694693,
+   "open_steps": 0,
+   "finger_gap": 0.039757072911089215,
+   "cube_held": true,
+   "cell": "near_goal_d0_o0",
+   "trivial": false
+  },
+  {
+   "id": 316,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.0805071042487011,
+    -0.09154130108408501
+   ],
+   "b_xy": [
+    0.01530888148072056,
+    -0.029793054026421385
+   ],
+   "yaw": 0.15720886996537767,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.20527844142587764,
+   "open_steps": 8,
+   "finger_gap": 0.06037976539485904,
+   "cube_held": false,
+   "cell": "near_goal_d0_o1",
+   "trivial": false
+  },
+  {
+   "id": 317,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.0029816325125199498,
+    0.04657839773106856
+   ],
+   "b_xy": [
+    0.08863469857440638,
+    0.04961862908122257
+   ],
+   "yaw": 0.07642378787059366,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.4590712384911524,
+   "open_steps": 6,
+   "finger_gap": 0.04541955896371338,
+   "cube_held": false,
+   "cell": "near_goal_d1_o1",
+   "trivial": false
+  },
+  {
+   "id": 318,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.08810197807754905,
+    -0.07686329195496742
+   ],
+   "b_xy": [
+    -0.08759451452442357,
+    -0.07145385501676026
+   ],
+   "yaw": 0.10866103960823824,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 1.02747101607305,
+   "open_steps": 7,
+   "finger_gap": 0.052745835344033126,
+   "cube_held": false,
+   "cell": "near_goal_d3_o1",
+   "trivial": false
+  },
+  {
+   "id": 319,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.031460787193102614,
+    -0.04019788506894606
+   ],
+   "b_xy": [
+    0.06746080145927542,
+    -0.056841587408739264
+   ],
+   "yaw": 0.02854131562603479,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.40526393418499795,
+   "open_steps": 8,
+   "finger_gap": 0.060373241102863184,
+   "cube_held": false,
+   "cell": "near_goal_d1_o1",
+   "trivial": false
+  },
+  {
+   "id": 320,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.0815018534676201,
+    0.09727889114750199
+   ],
+   "b_xy": [
+    -0.08585526320641171,
+    0.012429881780732455
+   ],
+   "yaw": -0.07594790129737349,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.6996854913789652,
+   "open_steps": 1,
+   "finger_gap": 0.039873809887689224,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": false
+  },
+  {
+   "id": 321,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.002511098597908124,
+    -0.042587368132070494
+   ],
+   "b_xy": [
+    0.09353671217517988,
+    -0.058356388549933524
+   ],
+   "yaw": -0.03655241881184947,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.9225096372192054,
+   "open_steps": 0,
+   "finger_gap": 0.03972628202941153,
+   "cube_held": true,
+   "cell": "near_goal_d3_o0",
+   "trivial": false
+  },
+  {
+   "id": 322,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.0783655871872156,
+    -0.011380241191578478
+   ],
+   "b_xy": [
+    0.033688181987777635,
+    -0.06775060447464076
+   ],
+   "yaw": 0.16751135072178325,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.03609106000390744,
+   "open_steps": 4,
+   "finger_gap": 0.04065496490603694,
+   "cube_held": true,
+   "cell": "near_goal_d0_o0",
+   "trivial": false
+  },
+  {
+   "id": 323,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.0022522878261346693,
+    -0.07104414765077523
+   ],
+   "b_xy": [
+    0.046723989876087973,
+    0.09037499892301895
+   ],
+   "yaw": -0.11330101053106834,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.22491323106673256,
+   "open_steps": 2,
+   "finger_gap": 0.04020522311480208,
+   "cube_held": true,
+   "cell": "near_goal_d0_o0",
+   "trivial": false
+  },
+  {
+   "id": 324,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.06158853902008088,
+    -0.04680699020171604
+   ],
+   "b_xy": [
+    -0.02737616545561035,
+    -0.015252324064917278
+   ],
+   "yaw": 0.1258050072140923,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.04932310447601262,
+   "open_steps": 5,
+   "finger_gap": 0.041070487502294376,
+   "cube_held": true,
+   "cell": "near_goal_d0_o1",
+   "trivial": false
+  },
+  {
+   "id": 325,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.07360510800220521,
+    -0.0810125034517701
+   ],
+   "b_xy": [
+    0.05950611997660676,
+    0.026901957151934042
+   ],
+   "yaw": 0.07804043578992635,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.2025098395576239,
+   "open_steps": 2,
+   "finger_gap": 0.040040018906587406,
+   "cube_held": true,
+   "cell": "near_goal_d0_o0",
+   "trivial": false
+  },
+  {
+   "id": 326,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.006003245485934717,
+    0.06400606364755006
+   ],
+   "b_xy": [
+    -0.0963558359884313,
+    0.09279212795593708
+   ],
+   "yaw": 0.15645904409246306,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.655444909566832,
+   "open_steps": 9,
+   "finger_gap": 0.06816390594151182,
+   "cube_held": false,
+   "cell": "near_goal_d2_o1",
+   "trivial": false
+  },
+  {
+   "id": 327,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.09125541928984959,
+    -0.05551458472590878
+   ],
+   "b_xy": [
+    0.029621435779351835,
+    -0.026544013381101485
+   ],
+   "yaw": 0.06445624172877383,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.7675081931002294,
+   "open_steps": 2,
+   "finger_gap": 0.040039236534304676,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": false
+  },
+  {
+   "id": 328,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.07471176713455166,
+    0.09184971393838877
+   ],
+   "b_xy": [
+    -0.04290431468786182,
+    -0.03471121048848831
+   ],
+   "yaw": -0.13531434957287442,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.1367088776386347,
+   "open_steps": 9,
+   "finger_gap": 0.06816429080488114,
+   "cube_held": false,
+   "cell": "near_goal_d0_o1",
+   "trivial": false
+  },
+  {
+   "id": 329,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.01013896584993721,
+    -0.07050332939024764
+   ],
+   "b_xy": [
+    0.002714812085145124,
+    0.054380898082792034
+   ],
+   "yaw": 0.17328249717860233,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.0776731427066969,
+   "open_steps": 1,
+   "finger_gap": 0.04002258660686586,
+   "cube_held": true,
+   "cell": "near_goal_d0_o0",
+   "trivial": false
+  },
+  {
+   "id": 330,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.04938351982103176,
+    -0.043502247268866756
+   ],
+   "b_xy": [
+    -0.0884403455558833,
+    0.0829340441223496
+   ],
+   "yaw": 0.10911184260154005,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.3550644393831697,
+   "open_steps": 3,
+   "finger_gap": 0.040253831252999014,
+   "cube_held": true,
+   "cell": "near_goal_d1_o0",
+   "trivial": false
+  },
+  {
+   "id": 331,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.025938818871536908,
+    0.08973829110785486
+   ],
+   "b_xy": [
+    0.024101095157258334,
+    -0.013270430367554509
+   ],
+   "yaw": 0.1732208231874874,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 1.0115323332224768,
+   "open_steps": 8,
+   "finger_gap": 0.060378358919398384,
+   "cube_held": false,
+   "cell": "near_goal_d3_o1",
+   "trivial": false
+  },
+  {
+   "id": 332,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.09112302806663553,
+    0.02505761728905023
+   ],
+   "b_xy": [
+    0.08727354954181886,
+    -0.07559012637860894
+   ],
+   "yaw": 0.019561318319775946,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.1343655798987094,
+   "open_steps": 8,
+   "finger_gap": 0.06037212227152661,
+   "cube_held": false,
+   "cell": "near_goal_d0_o1",
+   "trivial": false
+  },
+  {
+   "id": 333,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.08033705485322812,
+    -0.003807188991406108
+   ],
+   "b_xy": [
+    -0.05340626232139583,
+    0.07251646003451091
+   ],
+   "yaw": 0.18262557908006127,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.6963393298404741,
+   "open_steps": 6,
+   "finger_gap": 0.045439624140531584,
+   "cube_held": false,
+   "cell": "near_goal_d2_o1",
+   "trivial": false
+  },
+  {
+   "id": 334,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.04174387293597659,
+    0.05611831847439763
+   ],
+   "b_xy": [
+    -0.06444323333735179,
+    -0.07296250957953675
+   ],
+   "yaw": -0.1093729351706799,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.959039160171226,
+   "open_steps": 4,
+   "finger_gap": 0.040551242558467676,
+   "cube_held": true,
+   "cell": "near_goal_d3_o0",
+   "trivial": false
+  },
+  {
+   "id": 335,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.07729017340158109,
+    0.020184690677968332
+   ],
+   "b_xy": [
+    -0.005636887627544063,
+    0.08199291707056361
+   ],
+   "yaw": 0.11865798829571378,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.5184188051939184,
+   "open_steps": 6,
+   "finger_gap": 0.0454168298896523,
+   "cube_held": false,
+   "cell": "near_goal_d1_o1",
+   "trivial": false
+  },
+  {
+   "id": 336,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.007428383624117841,
+    -0.07282800027229995
+   ],
+   "b_xy": [
+    0.040184776638946866,
+    0.08500743233452135
+   ],
+   "yaw": 0.10271461318794506,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.031023467217802105,
+   "open_steps": 9,
+   "finger_gap": 0.06816437217253449,
+   "cube_held": false,
+   "cell": "near_goal_d0_o1",
+   "trivial": false
+  },
+  {
+   "id": 337,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.058399767977099074,
+    0.08702627463150286
+   ],
+   "b_xy": [
+    -0.03717021133243714,
+    -0.04759590732811301
+   ],
+   "yaw": -0.1277008645620041,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.42407164587702983,
+   "open_steps": 0,
+   "finger_gap": 0.039750476452658216,
+   "cube_held": true,
+   "cell": "near_goal_d1_o0",
+   "trivial": false
+  },
+  {
+   "id": 338,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.04420322661383087,
+    0.09505469982641966
+   ],
+   "b_xy": [
+    -0.05229952789985162,
+    -0.04956731542859401
+   ],
+   "yaw": 0.07037545737851417,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 1.0607507894021573,
+   "open_steps": 7,
+   "finger_gap": 0.05274617292944922,
+   "cube_held": false,
+   "cell": "near_goal_d3_o1",
+   "trivial": false
+  },
+  {
+   "id": 339,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.055030184842603073,
+    -0.08364888505855572
+   ],
+   "b_xy": [
+    -0.07705630597686791,
+    0.018216105273468175
+   ],
+   "yaw": -0.05583961105577071,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.004522578934349698,
+   "open_steps": 9,
+   "finger_gap": 0.06816613607348568,
+   "cube_held": false,
+   "cell": "near_goal_d0_o1",
+   "trivial": false
+  },
+  {
+   "id": 340,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.03976347625515697,
+    0.046222116385087754
+   ],
+   "b_xy": [
+    -0.06769165111112714,
+    -0.04655483085226282
+   ],
+   "yaw": -0.0071908021438614085,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.9566449198459835,
+   "open_steps": 7,
+   "finger_gap": 0.05274579552909263,
+   "cube_held": false,
+   "cell": "near_goal_d3_o1",
+   "trivial": false
+  },
+  {
+   "id": 341,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.01665746657217455,
+    -0.04798756470010739
+   ],
+   "b_xy": [
+    -0.04758527531030779,
+    0.01548366908991501
+   ],
+   "yaw": 0.12910420357573532,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.6961077324453997,
+   "open_steps": 0,
+   "finger_gap": 0.039749445639151615,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": false
+  },
+  {
+   "id": 342,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.006463489337668316,
+    -0.0698899401558236
+   ],
+   "b_xy": [
+    -0.07613700839583884,
+    -0.003123940705014161
+   ],
+   "yaw": -0.033289229084834074,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.14839561436664242,
+   "open_steps": 9,
+   "finger_gap": 0.068162133805151,
+   "cube_held": false,
+   "cell": "near_goal_d0_o1",
+   "trivial": false
+  },
+  {
+   "id": 343,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.058184152009838445,
+    -0.05432401912712934
+   ],
+   "b_xy": [
+    -0.039354667471585225,
+    0.09681946906872803
+   ],
+   "yaw": -0.16789817808265864,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.5463518507527513,
+   "open_steps": 9,
+   "finger_gap": 0.06816606349759867,
+   "cube_held": false,
+   "cell": "near_goal_d1_o1",
+   "trivial": false
+  },
+  {
+   "id": 344,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.0640823842772763,
+    0.05726750610277727
+   ],
+   "b_xy": [
+    -0.09341355719147429,
+    -0.07465935148419178
+   ],
+   "yaw": 0.09799421514007052,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.4599397172028916,
+   "open_steps": 2,
+   "finger_gap": 0.04004152570093764,
+   "cube_held": true,
+   "cell": "near_goal_d1_o0",
+   "trivial": false
+  },
+  {
+   "id": 345,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.031103142529555705,
+    -0.09139980970781539
+   ],
+   "b_xy": [
+    0.06073141910676694,
+    -0.053602827857419946
+   ],
+   "yaw": -0.170172640983421,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.24988732767140007,
+   "open_steps": 5,
+   "finger_gap": 0.041230253575114645,
+   "cube_held": true,
+   "cell": "near_goal_d0_o1",
+   "trivial": false
+  },
+  {
+   "id": 346,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.060914507722419,
+    -0.032241222109634225
+   ],
+   "b_xy": [
+    -0.01902172366219417,
+    0.06837747051064806
+   ],
+   "yaw": 0.19461076124811588,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.16388400030324377,
+   "open_steps": 6,
+   "finger_gap": 0.04545450297249926,
+   "cube_held": false,
+   "cell": "near_goal_d0_o1",
+   "trivial": false
+  },
+  {
+   "id": 347,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.051634421845318926,
+    -0.061908197418127364
+   ],
+   "b_xy": [
+    -0.03068633263069114,
+    0.02244079061599713
+   ],
+   "yaw": -0.005977766790665218,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.7880410245727084,
+   "open_steps": 2,
+   "finger_gap": 0.04003094993157482,
+   "cube_held": true,
+   "cell": "near_goal_d2_o0",
+   "trivial": false
+  },
+  {
+   "id": 348,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.07097116873705676,
+    -0.09036424008886319
+   ],
+   "b_xy": [
+    -0.03417397663546775,
+    0.015023016038140758
+   ],
+   "yaw": 0.05375333327152796,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.48100776390424005,
+   "open_steps": 9,
+   "finger_gap": 0.06816212167429882,
+   "cube_held": false,
+   "cell": "near_goal_d1_o1",
+   "trivial": false
+  },
+  {
+   "id": 349,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.05505694671337431,
+    -0.017187734507049468
+   ],
+   "b_xy": [
+    -0.054426236352154295,
+    0.08903557603064127
+   ],
+   "yaw": 0.0066744863970807705,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.45186864605889326,
+   "open_steps": 9,
+   "finger_gap": 0.06816184261370883,
+   "cube_held": false,
+   "cell": "near_goal_d1_o1",
+   "trivial": false
+  },
+  {
+   "id": 350,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    0.09420948187131113,
+    0.0877543528710872
+   ],
+   "b_xy": [
+    2.213714293954894e-05,
+    0.06541072693878962
+   ],
+   "yaw": 0.1954737583313837,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 0.40414418670568064,
+   "open_steps": 6,
+   "finger_gap": 0.04545600161625933,
+   "cube_held": false,
+   "cell": "near_goal_d1_o1",
+   "trivial": false
+  },
+  {
+   "id": 351,
+   "split": "eval",
+   "label": "near_goal",
+   "limit": 100,
+   "steps_before_stack": 100,
+   "family": "near_goal",
+   "a_xy": [
+    -0.05389165742245714,
+    -0.09572218449815593
+   ],
+   "b_xy": [
+    -0.08079228774054653,
+    0.03168317393872622
+   ],
+   "yaw": 0.001435815689102249,
+   "grasp": "osc-close",
+   "close_steps": 7,
+   "depth_fraction": 1.0590899084558043,
+   "open_steps": 5,
+   "finger_gap": 0.04093691579742907,
+   "cube_held": true,
+   "cell": "near_goal_d3_o1",
+   "trivial": false
+  }
+ ]
+}

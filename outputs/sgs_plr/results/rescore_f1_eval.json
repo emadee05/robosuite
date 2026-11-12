@@ -1,0 +1,214 @@
+{
+ "pool": "stack_omnireset_pools/f1",
+ "split": "eval",
+ "runs": {
+  "o1_uniform_s0": {
+   "all": 0.0078125,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.0,
+    "near_goal": 0.03125
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   },
+   "train_success": 0.0
+  },
+  "o1_uniform_s1": {
+   "all": 0.00390625,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.0,
+    "near_goal": 0.015625
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   },
+   "train_success": 0.013885135135135136
+  },
+  "o1_uniform_s2": {
+   "all": 0.01953125,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.0,
+    "near_goal": 0.078125
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   },
+   "train_success": 0.014166666666666666
+  },
+  "o1_sgs_s0": {
+   "all": 0.0,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.0,
+    "near_goal": 0.0
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   },
+   "train_success": 0.0
+  },
+  "o1_sgscells_s0": {
+   "all": 0.08984375,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.03125,
+    "near_goal": 0.328125
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   },
+   "train_success": 0.2541831602855289
+  },
+  "o1_sgscells_s1": {
+   "all": 0.00390625,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.0,
+    "near_goal": 0.015625
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   },
+   "train_success": 0.04662383177570094
+  },
+  "o1_sgscells_s2": {
+   "all": 0.03515625,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.0625,
+    "near_goal": 0.078125
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   },
+   "train_success": 0.08199168133098704
+  },
+  "o1_sgscellsk5_s0": {
+   "all": 0.03125,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.015625,
+    "near_goal": 0.109375
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   },
+   "train_success": 0.12151119402985075
+  },
+  "o1_sgscellsk5_s1": {
+   "all": 0.0,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.0,
+    "near_goal": 0.0
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   },
+   "train_success": 0.0
+  },
+  "o1_sgscellsk5_s2": {
+   "all": 0.0,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.0,
+    "near_goal": 0.0
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   },
+   "train_success": 0.004674657534246575
+  },
+  "o1_plr_s0": {
+   "all": 0.12109375,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.046875,
+    "near_goal": 0.4375
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   },
+   "train_success": 0.4552364864864865
+  },
+  "o1_plr_s1": {
+   "all": 0.171875,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.046875,
+    "near_goal": 0.640625
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   },
+   "train_success": 0.6947688013482199
+  },
+  "o1_plr_s2": {
+   "all": 0.1171875,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.015625,
+    "near_goal": 0.453125
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   },
+   "train_success": 0.35521408839779006
+  }
+ }
+}

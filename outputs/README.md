@@ -10,6 +10,19 @@ The fork publishes the same folders under `outputs/`.
 - `lift_uniform_baseline/`: existing local results, checkpoints and saved-run source
   snapshots. These remain in place and are excluded from Git.
 
+## Stack start sampling: SGS vs PLR vs uniform (2026-11-11)
+
+[`sgs_plr/runs/README.md`](sgs_plr/runs/README.md) compares the uniform, PLR and SGS
+start samplers on Stack:
+- the scripted ladder (`v2`)
+- the first paper-style pool (`o1`)
+- two paper-style pools with random gripper opening: `f2` (96 starts) and `f3`
+  (10,368 starts, a fresh start at each reset)
+
+It covers how each pool's starts were sampled, the per-seed results, and where PLR or
+SGS won and why. The per-run configs, evaluations and training logs are in
+`sgs_plr/runs/`. The lab notes and PPO diagnosis are in `sgs_plr/README.md`.
+
 ## Recorded runs and results (2026-10-30)
 
 This branch publishes Emily's maintained `uniform/` and `sgs/` experiment

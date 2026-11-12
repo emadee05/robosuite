@@ -1,0 +1,81 @@
+{
+ "pool": "stack_omnireset_pools/f2",
+ "split": "eval",
+ "policies": {
+  "still_open": {
+   "all": 0.0,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.0,
+    "near_goal": 0.0
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   }
+  },
+  "still_closed": {
+   "all": 0.0,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.0,
+    "near_goal": 0.0
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   }
+  },
+  "untrained_s0": {
+   "all": 0.0,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.0,
+    "near_goal": 0.0
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   }
+  },
+  "untrained_s1": {
+   "all": 0.0,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.0,
+    "near_goal": 0.0
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   }
+  },
+  "untrained_s2": {
+   "all": 0.0,
+   "by_label": {
+    "home": 0.0,
+    "reaching": 0.0,
+    "grasp": 0.0,
+    "near_goal": 0.0
+   },
+   "n": {
+    "home": 64,
+    "reaching": 64,
+    "grasp": 64,
+    "near_goal": 64
+   }
+  }
+ }
+}
